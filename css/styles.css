@@ -100,6 +100,45 @@
     display: flex;
 }
 
+.buttons button:hover,
+.buttons button:focus {
+    background-color: var(--accent-color);
+    color: var(--primari-white-color);
+}
+
+.section-buttons {
+    width: 125px;
+    height: 38px;
+    left: 593px;
+    top: 174px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* Pictures */
+
+.pictures h3 {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    }
+
+    .pictures p {
+    color: var(--primary-text-color);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1,87;
+    letter-spacing: 0.03em;
+    }
+
 /* Feature */
 
 .feature-list .title {
@@ -108,9 +147,6 @@
     font-size: 14px;
     line-height: 1,14;
     letter-spacing: 0.03em;
-    
-    
-
 }
 
 .feature-list p {
@@ -140,7 +176,6 @@
     font-size: 16px;
     line-height: 1,18;
     letter-spacing: 0.03em;
-
 }
 
 /* Footer */
