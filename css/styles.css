@@ -16,42 +16,47 @@
 
 /* Утіліти */
 
-ul{
+ul {
     margin: 0;
     padding: 0;
 }
-p{
+
+p {
     margin: 0;
 }
 
 .container {
-    width: 1230px;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
 
-    li {
-        list-style-type: none;
-      }
+li {
+    list-style-type: none;
+}
     
-      a {
-        text-decoration: none;
-      }
-      .visually-hidden { 
-        position: absolute; 
-        width: 1px; 
-        height: 1px; 
-        margin: -1px; 
-        border: 0; 
-        padding: 0; 
-        white-space: nowrap; 
-        clip-path: inset(100%); 
-        clip: rect(0 0 0 0); 
-        overflow: hidden; 
-      }
+a {
+    text-decoration: none;
+}
+
+.visually-hidden { 
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    margin: -1px; 
+    border: 0; 
+    padding: 0; 
+    white-space: nowrap; 
+    clip-path: inset(100%); 
+    clip: rect(0 0 0 0); 
+    overflow: hidden; 
+}
+
 .hidden-text {
-        font-size: 0;
-      }
+    font-size: 0;
+}
 
 /* Logo */
 
@@ -65,7 +70,6 @@ p{
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    
 }
     
 .logo-black {
@@ -77,8 +81,7 @@ p{
 .main-nav {
     display: flex;
     align-items: center;
-    /* justify-content: space-around; */
-    margin-left: 215px;
+    justify-content: space-around;
 }
 
 /* Site-nav */
@@ -88,28 +91,15 @@ p{
     margin-left: 94px;
 }
 
-/* .site-nav-list .item {
-    margin-right: 50px;
-}
-
-.site-nav-list .item:last-child {
-    margin-right: 0;
-} */
-
 .site-nav-list .item:not(:last-child) {
     margin-right: 50px;
-    
 }
 
 .site-nav-list .item {
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     display: block;
 }
-
-/* .site-nav-list .item + .item {
-margin-left: 50px;
-} */
 
 .site-nav-list .studio {
     color: var(--title-text-color);
@@ -155,8 +145,13 @@ margin-left: 50px;
 .hetro {
     background-color: #2F303A;
     text-align: center;
-    margin-bottom: 94px;
-    
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .hetro-title {
@@ -190,8 +185,10 @@ margin-left: 50px;
 }
 
 .buttons {
-    margin-top: 132px;
     margin-bottom: 56px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .section-buttons {
@@ -204,15 +201,33 @@ margin-left: 50px;
     letter-spacing: 0.03em;
     border: 1px solid transparent;
     padding: 6px 22px;
+    margin-left: 8px;
 }
 
 /* Pictures */
 
+.pictures {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pictures-element {
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+}
+
+.pictures-element:nth-child(3n){
+    margin-right: 0;
+}
 .pictures h3 {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    }
+}
 
 .pictures p {
     color: var(--primary-text-color);
@@ -220,7 +235,11 @@ margin-left: 50px;
     font-size: 16px;
     line-height: 1,87;
     letter-spacing: 0.03em;
-    }
+}
+
+.block {
+    padding-left: 24px;
+}
 
 /* Feature */
 
@@ -231,6 +250,7 @@ margin-left: 50px;
 
 .feature-list .item {
      width: 270px;
+     margin-left: 30px;
 }
 
 .feature-list .title {
@@ -254,8 +274,45 @@ margin-left: 50px;
 }
 
 .team-title {
-    margin-top: 118px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
+    margin: 0;
+    text-align: center;
+}
+
+.work{
+    padding-top: 0;
+}
+
+.image {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image li {
+    width: 370px;
+   margin-right: 30px;
+}
+
+.image li:last-child{
+    margin-right: 0;
+}
+
+.name {
+    display: flex;
+}
+
+.name li{
+    margin-right: 30px;
+}
+
+.name li:last-child{
+    margin-right: 0;
+}
+.name-photo {
+    width: 270px;
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 
@@ -272,9 +329,20 @@ margin-left: 50px;
     font-size: 16px;
     line-height: 1,18;
     letter-spacing: 0.03em;
+    padding-bottom: 30px;
 }
 
 /* Footer */
+
+.background {
+    background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-mail {
+    margin: 9px;
+}
 
 .logo-footer {
     color: var(--accent-color);
@@ -302,9 +370,6 @@ margin-left: 50px;
     letter-spacing: 0.03em;
 }
 
-.fon-background {
-    background-color: #2F303A;
-}
 
 
 
