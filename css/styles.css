@@ -260,8 +260,10 @@ a {
      flex-wrap: wrap;
 }
 
-/* .ikon::before {
-    background-image: url(../photo/Vector.png);
+/* .icon {
+    margin-right: 220px;
+    background: #F5F4FA;
+    border-radius: 4px;
 } */
 
 .feature-list .item {
