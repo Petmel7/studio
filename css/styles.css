@@ -260,6 +260,10 @@ a {
      flex-wrap: wrap;
 }
 
+/* .ikon::before {
+    background-image: url(../photo/Vector.png);
+} */
+
 .feature-list .item {
      width: 270px;
      margin-left: 30px;
