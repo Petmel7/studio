@@ -297,6 +297,32 @@ a {
     background-color: #F5F4FA;
 }
 
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social-network {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+    /* background-color: var(--accent-color);
+    padding: 10px 10px;
+    border-radius: 50px; */
+}
+ 
+.social-icons {
+    background-color: var(--accent-color);
+    padding: 10px 12px;
+    border-radius: 50px;
+    display: block;
+    margin-right: 10px;
+}
+
+.social:last-child {
+margin-right: 0;
+}
+
 .team-title {
     padding-bottom: 50px;
     margin: 0;
@@ -326,11 +352,11 @@ a {
     justify-content: center;
 }
 
-.name li{
+.name .name-photo{
     margin-right: 30px;
 }
 
-.name li:last-child{
+.name .name-photo:last-child{
     margin-right: 0;
 }
 .name-photo {
