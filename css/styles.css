@@ -300,27 +300,40 @@ a {
 .social {
     display: flex;
     justify-content: center;
+    padding-bottom: 30px;
 }
 
 .social-network {
     width: 20px;
     height: 20px;
     fill: #AFB1B8;
-    /* background-color: var(--accent-color);
-    padding: 10px 10px;
-    border-radius: 50px; */
+}
+
+/* .social-icons .social-network:hover
+.social-icons .social-network:focus {
+    background-color: var(--accent-color);
+    color: var(--primari-white-color);
+} */
+
+.social .social-icons:hover {
+    background-color: var(--accent-color);
+}
+
+.social .social-network:hover {
+    fill: #FFFFFF;
 }
  
 .social-icons {
-    background-color: var(--accent-color);
+    background-color: var(--primari-white-color);
     padding: 10px 12px;
     border-radius: 50px;
     display: block;
-    margin-right: 10px;
+    /* margin-right: 10px; */
+    
 }
 
-.social:last-child {
-margin-right: 0;
+.social-icons:last-child {
+    margin-right: 0;
 }
 
 .team-title {
@@ -338,12 +351,12 @@ margin-right: 0;
     justify-content: center;
 }
 
-.image li {
+.image-team {
    width: 370px;
    margin-right: 30px;
 }
 
-.image li:last-child{
+.image-team:last-child{
     margin-right: 0;
 }
 
@@ -364,6 +377,7 @@ margin-right: 0;
     text-align: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    background-color: var(--primari-white-color);
 }
 
 
@@ -382,6 +396,39 @@ margin-right: 0;
     letter-spacing: 0.03em;
     padding-bottom: 30px;
 }
+
+/* Company */
+
+.company {
+    display: flex;
+    justify-content: center;
+}
+
+.company-logo svg {
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    fill: #AFB1B8;
+    margin-right: 30px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.company-logo svg:hover {
+    fill: #2196F3;
+    border-color: #2196F3;
+    
+}
+
+.company-logo svg:nth-child(6) {
+    margin-right: 0;
+}
+
+.fon {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+    
 
 /* Footer */
 
