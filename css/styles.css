@@ -223,6 +223,13 @@ a {
     flex-wrap: wrap;
 }
 
+.pictures-element:hover {
+    background: #FFFFFF;
+border: 1px solid #EEEEEE;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+}
+
 .pictures-element {
     width: 370px;
     margin-right: 30px;
@@ -309,12 +316,6 @@ a {
     fill: #AFB1B8;
 }
 
-/* .social-icons .social-network:hover
-.social-icons .social-network:focus {
-    background-color: var(--accent-color);
-    color: var(--primari-white-color);
-} */
-
 .social .social-icons:hover {
     background-color: var(--accent-color);
 }
@@ -328,7 +329,7 @@ a {
     padding: 10px 12px;
     border-radius: 50px;
     display: block;
-    /* margin-right: 10px; */
+    margin-right: 10px;
     
 }
 
@@ -340,6 +341,9 @@ a {
     padding-bottom: 50px;
     margin: 0;
     text-align: center;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
 }
 
 .work{
@@ -404,23 +408,26 @@ a {
     justify-content: center;
 }
 
-.company-logo svg {
+.company-logo {
     width: 170px;
     height: 92px;
     border-radius: 4px;
     fill: #AFB1B8;
-    margin-right: 30px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
 
-.company-logo svg:hover {
+.company-logo:hover {
     fill: #2196F3;
     border-color: #2196F3;
     
 }
 
-.company-logo svg:nth-child(6) {
+.company-name {
+    margin-right: 30px;
+}
+
+.company-name:nth-child(6) {
     margin-right: 0;
 }
 
@@ -467,6 +474,21 @@ a {
     line-height: 1,71;
     letter-spacing: 0.03em;
 }
+
+
+.footer-icons {
+    display: flex;
+}
+
+.flex h3 {
+
+}
+   
+
+.icons-network {
+
+}
+
 
 
 
