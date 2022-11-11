@@ -119,29 +119,36 @@ a {
     font-size: 14px;
     line-height: 1,14;
     letter-spacing: 0.02em;
+    fill: var(--primary-text-color);
 }
 
 .auth-nav-list {
     display: flex;
     margin-left: 344px;
+    
 }
 
 .auth-nav-list .item + .item {
-    margin-left: 50px;
+   margin-left: 30px;
 }
 
-.site-nav-list a:hover, 
-.site-nav-list a:focus {
+.site-nav-list :hover, 
+.site-nav-list :focus {
     color: var(--accent-color)
 }
 
-.auth-nav-list a:hover,
-.auth-nav-list a:focus {
+.auth-nav-list :hover,
+.auth-nav-list :focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 .portfolio {
     color: var(--accent-color);
+}
+
+.tel{
+    padding-right: 10px;
 }
 
 /* Hetro */
@@ -445,6 +452,10 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
     padding-bottom: 60px;
 }
 
+.footer {
+    margin-right: 70px;
+}
+
 .footer-mail {
     margin: 9px;
 }
@@ -475,23 +486,37 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
     letter-spacing: 0.03em;
 }
 
+.flex {
+    display: flex;
+}
+
+.footer-text {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primari-white-color);
+}
 
 .footer-icons {
     display: flex;
 }
 
-.flex h3 {
-
+.background-icons {
+    background: rgba(255, 255, 255, 0.1);
+    display: block;
+    border-radius: 50px;
+    padding:10px 12px;
+    margin-right: 10px;
 }
-   
 
-.icons-network {
-
+.background-icons:hover {
+    background-color: var(--accent-color);
 }
 
-
-
-
+.social-network:hover {
+    fill: var(--primari-white-color);
+}
+                        
 
 
 
