@@ -25,15 +25,15 @@
         </ul>
 
         <ul class="auth-nav-list">
-            <li class="item"><a href=""><svg  width="16px" height="12px" class="tel item"><use href="./images/sprite.svg#icon-envelope-hover"></use></svg></li>info@devstudio.com</use></svg></a></li>
-            <li class="item"><a href=""><li class="item"><svg width="10px" height="16px" class="tel item"><use href="./images/sprite.svg#icon-Vector-3"></use></svg></li>+38 096 111 11 11</use></svg></a></li>
+            <li class="item"><a href="" class="focus"><svg  width="16px" height="12px" class="tel"><use href="./images/sprite.svg#icon-envelope-hover"></use></svg></li>info@devstudio.com</use></svg></a></li>
+            <li class="item"><a href="" class="focus"><svg width="10px" height="16px" class="tel"><use href="./images/sprite.svg#icon-Vector-3"></use></svg></li>+38 096 111 11 11</use></svg></a></li>
         </ul>
     </nav>
     </header>
 
     <section class="hetro overlay">
         <h1 class="hetro-title">Ефективні рішення для вашого бізнесу</h1>
-        <a href="" class="button">Замовити послугу</a>
+        <button class="button" data-modal-open>Замовити послугу</button>
     </section>
 
     <section class="section">
@@ -69,13 +69,16 @@
         <h2 class="team-title">Чим ми займаємося</h2>
         <ul class="image">
             <li class="image-team">
-                <img src="./images/img.png" alt="" width="370"/>
+                <img src="./images/img.png" alt="" width="370" height="294"/>
+                <p class="applications">десктопні додатки</p>
             </li>
             <li class="image-team">
-                <img src="./images/img.png.png" alt="" width="370"/>
+                <img src="./images/img.png.png" alt="" width="370" height="294"/>
+                <p class="applications">мобільні додатки</p>
             </li>
             <li class="image-team">
-                <img src="./images/img.png.png.png" alt="" width="370"/>
+                <img src="./images/img.png.png.png" alt="" width="370" height="294"/>
+                <p class="applications">дизайнерські рішення</p>
             </li>
         </ul>
     </div>
@@ -228,5 +231,12 @@
     </div>
         </nav>
     </footer>
+    
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" data-modal-close>x</button>
+        </div>
+    </div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
