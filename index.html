@@ -242,26 +242,39 @@
         <div class="modal">
             <button class="modal-button" data-modal-close><svg><use href="./images/modal.icons.svg#icon-close" width="30px" height="30px"></use></svg></button>
             <form class="form js-speacer-form">
-            <div class="form-field">
+            <ul class="form-field">
                 <h2 class="modal-text">Залиште свої дані, ми вам передзвонимо</h2>
+            <li>
                 <label for="name" class="form-label">Ім'я</label>
-                <input type="text" name="name" id="name" autofocus />
-            </div>
-            <div class="form-field">
+            </li>
+            <li class="size">
+                <svg class="size-icon"><use href="./images/modal.icons.svg#icon-name"></use></svg>
+            </li>
+            <li>
+                <input type="text" name="name" id="name" autofocus>
+            </li>
+            <li class="form-field">
                 <label for="tel" class="form-label">Телефон</label>
+            </li>
+            <li>
                 <input type="tel" name="tel" id="tel">
-            </div>
-            <div class="form-field">
+            </li>
+            <li class="form-field">
                 <label for="mail" class="form-label">Пошта</label>
+            </li>
+            <li>
                 <input type="email" name="mail" id="mail" autocomplete="off">
-            </div>
-            <div class="form-field">
+            </li>
+            <li class="form-field">
                 <label for="" class="form-label">Коментар</label>
+            </li>
+            <li>
                 <textarea name="" id="" cols="30" rows="10"></textarea>
-            </div>
+            </li>
+    </ul>
             <div class="checkbox">
                 <imput type="checkbox" name="" value="" id=""/>
-                <label for="">Погоджуюся з розсилкою та приймаю<span><a href="">Умови договору</a></span></label>
+                <label for="">Погоджуюся з розсилкою та приймаю<a href="">Умови договору</a></label>
             </div>
             <div class="submit">
                 <button type="submit" class="submit-button">Відправити</button>
