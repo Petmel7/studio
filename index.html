@@ -240,35 +240,35 @@
     
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="modal-button" data-modal-close><svg><use href="./images/modal.icons.svg#icon-close" width="30px" height="30px"></use></svg></button>
+            <svg class="styles-button" data-modal-close width="30px" height="30px"><use href="./images/modal.icons.svg#icon-close"></use></svg>
             <form class="form js-speacer-form">
             <ul class="form-field">
                 <h2 class="modal-text">Залиште свої дані, ми вам передзвонимо</h2>
-            <li>
+            <li class="form-field-modal">
                 <label for="name" class="form-label">Ім'я</label>
             </li>
-            <li class="size">
+            <li class="form-hover">
                 <svg class="size-icon"><use href="./images/modal.icons.svg#icon-name"></use></svg>
-            </li>
-            <li>
                 <input type="text" name="name" id="name" autofocus>
             </li>
-            <li class="form-field">
+            <li class="form-field-modal">
                 <label for="tel" class="form-label">Телефон</label>
             </li>
-            <li>
+            <li class="form-hover">
+                <svg class="size-icon"><use href="./images/modal.icons.svg#icon-phon"></use></svg>
                 <input type="tel" name="tel" id="tel">
             </li>
-            <li class="form-field">
+            <li class="form-field-modal">
                 <label for="mail" class="form-label">Пошта</label>
             </li>
-            <li>
+            <li class="form-hover">
+                <svg class="size-icon"><use href="./images/modal.icons.svg#icon-mail"></use></svg>
                 <input type="email" name="mail" id="mail" autocomplete="off">
             </li>
-            <li class="form-field">
+            <li class="form-field-modal">
                 <label for="" class="form-label">Коментар</label>
             </li>
-            <li>
+            <li class="form-hover">
                 <textarea name="" id="" cols="30" rows="10"></textarea>
             </li>
     </ul>
