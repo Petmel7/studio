@@ -616,7 +616,11 @@ a {
     padding: 0;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    fill: var(--primari-white-color);
+   
+}
+
+.close-button {
+    color: #000000;
 }
 
 .styles-button:hover {
@@ -637,6 +641,16 @@ a {
     height: 12px;
     position: absolute;
     padding: 13px;
+}
+
+.size-tel {
+    width: 13px;
+    height: 13px;
+}
+
+.size-mail {
+    width: 15px;
+    height: 12px;
 }
 
 .portfolio::after
@@ -674,26 +688,25 @@ a {
     padding: 10px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    
 }
 
-.form-field .form-hover:hover,
-.form-field .form-hover:focus {
+/* .form-field .form-focus:hover, */
+.form-field .form-focus:focus {
     fill: var(--accent-color);
 }
 
-.form-field input:hover,
+/* .form-field input:hover, */
 .form-field input:focus {
     border-color: var(--accent-color);
 }
 
-.form-field textarea:hover,
+/* .form-field textarea:hover, */
 .form-field textarea:focus {
     border-color: var(--accent-color);
 }
 
 .form-field textarea {
-    margin: 0;
-    box-sizing: border-box;
     width: 448px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -706,13 +719,25 @@ a {
     line-height: 24px;
     color: var(--primary-text-color);
     margin-bottom: 30px;
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
 }
+
 
 .checkbox a {
     text-decoration: underline;
     color: var(--accent-color);
     margin-left: 10px;
+}
+
+.checkbox input {
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    
+    /* appearance: none; */
+    
 }
 
 .submit {
