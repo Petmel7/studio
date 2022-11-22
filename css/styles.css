@@ -582,7 +582,6 @@ a {
 .footer-e-mail input {
     width: 358px;
     height: 50px;
-    /* padding: 15px; */
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -590,26 +589,42 @@ a {
     margin-right: 12px;
 }
 
-.footer-e-mail-placeholder {
-    padding-right: 16px;
+::placeholder {
+    transform: translateX(16px);
+    font-size: 16px;
+    line-height: 1,25;
+    letter-spacing: 0.03em;
 }
 
 .footer-button {
     width: 200px;
-    height: 50px;
-    /* padding: 7px; */
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1,87;
     color: var(--primari-white-color);
-    /* align-items: center;
-    text-align: center; */
     letter-spacing: 0.06em;
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: transparent;
+    padding-top: 7px;
+    padding-bottom: 18px;
+}
 
+/* .footer-button::after {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    
+    background-image: url(../images/symbol.svg);
+} */
+
+.footer-button svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--primari-white-color);
+    transform: translateX(10px) translateY(6px);
 }
 
 /* Madalka */
@@ -664,7 +679,7 @@ a {
 .modal-text {
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1,15;
     text-align: center;
     color: var(--title-text-color);
     margin-top: 0;
@@ -704,7 +719,7 @@ a {
 
 .form-field-modal {
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1,16;
     color: var(--primary-text-color);
     margin-bottom: 4px;
 }
@@ -750,7 +765,7 @@ a {
 
 .checkbox {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1,71;
     color: var(--primary-text-color);
     margin-bottom: 30px;
     /* text-align: center; */
@@ -782,7 +797,7 @@ a {
     padding: 10px 52px;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1,87;
     color: var(--primari-white-color);
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
