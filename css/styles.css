@@ -663,17 +663,10 @@ a {
     right: 8px;
     margin: 0;
     padding: 0;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-   
-}
-
-.close-button {
-    color: #000000;
-}
-
-.styles-button:hover {
-    
+    /* border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%; */
+    fill: #d51d1d;
+    background-color: #FFFFFF;
 }
 
 .modal-text {
@@ -688,8 +681,15 @@ a {
 .size-icon {
     width: 12px;
     height: 12px;
+    top: 0;
+    left: 0;
     position: absolute;
     padding: 13px;
+    fill: var(--title-text-color);
+}
+
+.form-focus {
+    position: relative;
 }
 
 .size-tel {
@@ -701,15 +701,6 @@ a {
     width: 15px;
     height: 12px;
 }
-
-.portfolio::after
-
-
-/* .form-label {
-    font-size: 12px;
-    line-height: 14px;
-    color: var(--primary-text-color);
-} */
 
 .form-field {
     margin-bottom: 10px;
@@ -728,31 +719,29 @@ a {
     margin-bottom: 10px;
 }
 
-
 .form-field input {
     margin: 0;
     box-sizing: border-box;
     width: 448px;
-    /* height: 40px; */
     padding: 10px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    
 }
 
-/* .form-field .form-focus:hover, */
-.form-field .form-focus:focus {
+input:focus + svg {
     fill: var(--accent-color);
+    outline: none;
 }
 
-/* .form-field input:hover, */
-.form-field input:focus {
+input:focus {
     border-color: var(--accent-color);
+    fill: var(--accent-color);
+    outline: none;
 }
 
-/* .form-field textarea:hover, */
 .form-field textarea:focus {
     border-color: var(--accent-color);
+    outline: none;
 }
 
 .form-field textarea {
@@ -768,7 +757,6 @@ a {
     line-height: 1,71;
     color: var(--primary-text-color);
     margin-bottom: 30px;
-    /* text-align: center; */
     display: flex;
     align-items: center;
 }
@@ -784,7 +772,6 @@ a {
     width: 16px;
     height: 15px;
     margin-right: 7px;
-    
     /* appearance: none; */
     
 }
