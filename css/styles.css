@@ -60,7 +60,7 @@ a {
 
 /* Logo */
 
-.site-nav-list > .portfolio {
+.site-nav > .portfolio {
     color: var(--accent-color);
 }
 
@@ -90,23 +90,23 @@ a {
 
 /* Site-nav */
 
-.site-nav-list {
+.site-nav {
     display: flex;
     margin-left: 94px;
 }
 
-.site-nav-list .item:not(:last-child) {
+.site-nav__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.site-nav-list .item {
+.site-nav__item {
     padding-top: 32px;
     padding-bottom: 32px;
     display: block;
     position: relative;
 }
 
-.site-nav-list .studio {
+.site-nav__studio {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -114,7 +114,11 @@ a {
     letter-spacing: 0.02em;
 }
 
-.portfolio::after {
+.site-nav__portfolio {
+    color: var(--accent-color);
+}
+
+.site-nav__portfolio::after {
     position: absolute;
     content: '';
     display: block;
@@ -125,44 +129,43 @@ a {
     bottom: 0;
 }
 
-.auth-nav-list .focus {
+.site-nav :hover, 
+.site-nav :focus {
+    color: var(--accent-color);
+}
+
+/* Auth-nav */
+
+.auth-nav .focus {
     color: var(--primary-text-color);
     font-weight: 500;
     letter-spacing: 0.02em;
     fill: var(--primary-text-color);
 }
 
-.auth-nav-list {
+.auth-nav {
     display: flex;
     margin-left: 300px;
 }
 
-.auth-nav-list .item {
+.auth-nav .item {
     margin-left: 30px;
 }
 
-.tel {
+.auth-nav .tel {
     margin-right: 10px;
 }
 
-.site-nav-list :hover, 
-.site-nav-list :focus {
-    color: var(--accent-color)
-}
-
-.auth-nav-list :hover .focus,
-.auth-nav-list :focus .focus {
+.auth-nav :hover .focus,
+.auth-nav :focus .focus {
     fill: var(--accent-color);
     color: var(--accent-color);
 }
 
-.portfolio {
-    color: var(--accent-color);
-}
 
 /* Hetro */
 
-.hetro {
+.hero {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -180,7 +183,7 @@ a {
     padding-bottom: 94px;
 }
 
-.hetro-title {
+.hero-title {
     margin-top: 0;
     margin-bottom: 30;
     color: var(--primari-white-color);
