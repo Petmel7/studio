@@ -472,7 +472,7 @@ a {
 .hero {
   text-align: center;
   padding-top: 200px;
-  padding-bottom: 200px;
+  padding-bottom: 350px;
 }
 
 .overlay {
@@ -895,7 +895,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 93px;
+  margin-right: 80px;
 }
 
 .footer-icons li {
@@ -968,6 +968,7 @@ a {
 
 .footer-button {
   width: 200px;
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1, 87;
