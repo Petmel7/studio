@@ -1,10 +1,10 @@
-@mixin centeredFlex ($type: flex) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+// @mixin centeredFlex ($type: flex) {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
 
-@mixin borderd($color: black, $type: solid) {
-    border-top: 1px $type $color;
-    border-bottom: $type $color;
-}
+// @mixin borderd($color: black, $type: solid) {
+//     border-top: 1px $type $color;
+//     border-bottom: $type $color;
+// }
