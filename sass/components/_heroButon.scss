@@ -1,0 +1,39 @@
+/* HeroButton */
+
+.button {
+    background-color: var(--accent-color);
+    color: var(--primari-white-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1,87;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+    border: 1px solid transparent;
+}
+
+.buttons button:hover,
+.buttons button:focus {
+    background-color: var(--accent-color);
+    color: var(--primari-white-color);
+}
+
+.buttons {
+    margin-bottom: 56px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-buttons {
+    background: #F5F4FA;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,62;
+    letter-spacing: 0.03em;
+    border: 1px solid transparent;
+    padding: 6px 22px;
+    margin-left: 8px;
+}

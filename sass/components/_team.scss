@@ -1,0 +1,127 @@
+/* Team */
+
+.team {
+    background-color: #F5F4FA;
+}
+
+.applications {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primari-white-color);
+    background: rgba(47, 48, 58, 0.8);
+    padding: 27px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.image li {
+    position: relative;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.social li {
+    margin-right: 10px;
+}
+
+.social-network {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+    padding: 12px;
+}
+
+.social .social-icons:hover {
+    background-color: var(--accent-color);
+}
+
+.social .social-network:hover {
+    fill: #FFFFFF;
+}
+ 
+.social-icons {
+    background-color: var(--primari-white-color);
+    border-radius: 50px;
+    display: block;
+    width: 44px;
+    height: 44px;
+    
+}
+
+.social-icons:last-child {
+    margin-right: 0;
+}
+
+.team-title {
+    padding-bottom: 50px;
+    margin: 0;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+}
+
+.work{
+    padding-top: 0;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+.image-team {
+   height: 294px;
+   width: 370px;
+   margin-right: 30px;
+}
+
+.image-team:last-child{
+    margin-right: 0;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+}
+
+.name .name-photo{
+    margin-right: 30px;
+}
+
+.name .name-photo:last-child{
+    margin-right: 0;
+}
+.name-photo {
+    width: 270px;
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--primari-white-color);
+}
+
+
+.name h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    margin-top: 30px;
+}
+
+.name p {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1,18;
+    letter-spacing: 0.03em;
+    padding-bottom: 30px;
+}

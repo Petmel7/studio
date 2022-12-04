@@ -163,7 +163,7 @@ a {
 }
 
 
-/* Hetro */
+/* Hero */
 
 .hero {
     text-align: center;
@@ -196,7 +196,7 @@ a {
     margin-right: auto;
 }
 
-/* Button */
+/* HeroButton */
 
 .button {
     background-color: var(--accent-color);
@@ -340,7 +340,7 @@ a {
     font-size: 14px;
     line-height: 1,71;
     letter-spacing: 0.03em;
-} */
+} 
 
 /* Team */
 
@@ -614,14 +614,6 @@ a {
     padding-bottom: 18px;
 }
 
-/* .footer-button::after {
-    content: '';
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    
-    background-image: url(../images/symbol.svg);
-} */
 
 .footer-button svg {
     width: 24px;
@@ -630,7 +622,7 @@ a {
     transform: translateX(10px) translateY(6px);
 }
 
-/* Madalka */
+/* Modal */
 
 .backdrop {
     opacity:1;
