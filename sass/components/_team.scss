@@ -4,6 +4,15 @@
     background-color: #F5F4FA;
 }
 
+.team-title {
+    padding-bottom: 50px;
+    margin: 0;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+}
+
 .applications {
     font-weight: 700;
     font-size: 14px;
@@ -19,9 +28,67 @@
     right: 0;
 }
 
+// Image
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
 .image li {
     position: relative;
 }
+
+.image-team {
+   height: 294px;
+   width: 370px;
+   margin-right: 30px;
+}
+
+.image-team:last-child{
+    margin-right: 0;
+}
+
+// Name
+
+.name {
+    // display: flex;
+    justify-content: center;
+}
+
+// .name .name-photo{
+//     margin-right: 30px;
+// }
+
+.name .name-photo:last-child{
+    margin-right: 0;
+}
+.name-photo {
+    // width: 270px;
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--primari-white-color);
+}
+
+
+.name h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    margin-top: 30px;
+}
+
+.name p {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1,18;
+    letter-spacing: 0.03em;
+    padding-bottom: 30px;
+}
+
+// Social
 
 .social {
     display: flex;
@@ -61,67 +128,7 @@
     margin-right: 0;
 }
 
-.team-title {
-    padding-bottom: 50px;
-    margin: 0;
-    text-align: center;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-}
-
 .work{
     padding-top: 0;
 }
 
-.image {
-    display: flex;
-    justify-content: center;
-}
-
-.image-team {
-   height: 294px;
-   width: 370px;
-   margin-right: 30px;
-}
-
-.image-team:last-child{
-    margin-right: 0;
-}
-
-.name {
-    display: flex;
-    justify-content: center;
-}
-
-.name .name-photo{
-    margin-right: 30px;
-}
-
-.name .name-photo:last-child{
-    margin-right: 0;
-}
-.name-photo {
-    width: 270px;
-    text-align: center;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    background-color: var(--primari-white-color);
-}
-
-
-.name h3 {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.03em;
-    margin-top: 30px;
-}
-
-.name p {
-    color: var(--primary-text-color);
-    font-size: 16px;
-    line-height: 1,18;
-    letter-spacing: 0.03em;
-    padding-bottom: 30px;
-}

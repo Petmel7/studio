@@ -1,13 +1,13 @@
 /* Company */
 
 .company {
-    display: flex;
+    // display: flex;
     justify-content: center;
 }
 
 .company-logo {
-    width: 170px;
-    height: 92px;
+    // width: 170px;
+    // height: 92px;
     border-radius: 4px;
     fill: #AFB1B8;
     border: 1px solid #AFB1B8;
@@ -20,9 +20,9 @@
     
 }
 
-.company-name {
-    margin-right: 30px;
-}
+// .company-name {
+//     margin-right: 30px;
+// }
 
 .company-name:nth-child(6) {
     margin-right: 0;
