@@ -4,15 +4,18 @@
     background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: center;
 }
 
-.footer {
-    margin-right: 70px;
-}
+// .footer {
+//     margin-right: 70px;
+// }
 
 .footer-mail {
     margin: 9px;
 }
+
+
 
 .logo-footer {
     color: var(--accent-color);
@@ -24,6 +27,15 @@
 
 .logo-white {
     color: var(--primari-white-color);
+}
+
+.footer {
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+
+.footer .footer-mail {
+    text-align: center;
 }
 
 .address {
@@ -49,14 +61,26 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--primari-white-color);
+    text-align: center;
 }
 
 .footer-icons {
     display: flex;
-    margin-right: 80px;
+    // margin-right: 80px;
+    justify-content: center;
+    margin-bottom: 60px;
 }
+
+.footer-icons .icons-network:last-child {
+    margin-right: 0;
+}
+
 .footer-icons li{
     margin-right: 10px;
+}
+
+.footer-icons .background-icons {
+    justify-content: center;
 }
 
 .background-icons {
@@ -75,6 +99,10 @@
     fill: var(--primari-white-color);
 }
 
+.footer-e-mail {
+    text-align: center;
+}
+
 .footer-e-mail input {
     width: 358px;
     height: 50px;
@@ -82,7 +110,8 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background: #2F303A;
-    margin-right: 12px;
+    // margin-right: 12px;
+    margin-bottom: 20px;
 }
 
 ::placeholder {

@@ -4,13 +4,27 @@
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .overlay {
-    max-width: 1600px;
-    height: 200px;
+    // max-width: 1600px;
+    // height: 200px;
     background-image: linear-gradient( to left, 
     rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),url(../images/overlay.jpg);
+
+    // @media screen and (min-width: 510px) {
+    //     width: 510px;
+    // }
+
+    // @media screen and (min-width: 798px) {
+    //     width: 798px;
+    // }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
 
 .section {
@@ -22,11 +36,13 @@
     margin-top: 0;
     margin-bottom: 30;
     color: var(--primari-white-color);
-    font-size: 44px;
-    line-height: 1,36;
+    // font-size: 44px;
+    // line-height: 1,36;
+    font-size: 26px;
+    line-height: 1,61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    width: 696px;
+    // width: 696px;
     margin-left: auto;
     margin-right: auto;
 }
