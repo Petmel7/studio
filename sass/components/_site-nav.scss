@@ -25,6 +25,11 @@
     padding-bottom: 32px;
     display: block;
     position: relative;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+
 }
 
 .site-nav__studio {

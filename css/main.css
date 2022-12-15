@@ -398,6 +398,11 @@ a {
   display: block;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .site-nav__item {
+    display: none;
+  }
+}
 
 .site-nav__studio {
   color: var(--title-text-color);
@@ -428,6 +433,12 @@ a {
 }
 
 /* Auth-nav */
+@media screen and (max-width: 768px) {
+  .auth-nav {
+    display: none;
+  }
+}
+
 .auth-nav .item {
   margin-left: 30px;
 }
@@ -673,12 +684,6 @@ a {
   letter-spacing: 0.03em;
 }
 
-@media screen and (max-width: 768px) {
-  .hidden-title {
-    display: none;
-  }
-}
-
 .applications {
   font-weight: 700;
   font-size: 14px;
@@ -705,11 +710,6 @@ a {
 
 .image li {
   position: relative;
-}
-@media screen and (max-width: 768px) {
-  .image li {
-    display: none;
-  }
 }
 
 .image-team {
@@ -809,6 +809,11 @@ a {
 
 .work {
   padding-top: 0;
+}
+@media screen and (max-width: 768px) {
+  .work {
+    display: none;
+  }
 }
 
 /* Company */
@@ -1055,7 +1060,7 @@ a {
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .backdrop {
     width: 100%;
     height: 100%;
@@ -1151,10 +1156,14 @@ a {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 448px;
   padding: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+@media screen and (max-width: 1200px) {
+  .form-field input {
+    padding: 10px 171px;
+  }
 }
 
 .form-focus input {
@@ -1178,19 +1187,63 @@ input:focus {
 }
 
 .form-field textarea {
-  width: 448px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 1200px) {
+  .form-field textarea {
+    width: 370px;
+  }
+}
+
+.form-focus ::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-focus ::-moz-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-focus :-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-focus ::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-focus ::placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
 
 .checkbox {
-  font-size: 14px;
-  line-height: 1, 71;
   color: var(--primary-text-color);
   margin-bottom: 30px;
   text-align: center;
+}
+@media screen and (max-width: 1200px) {
+  .checkbox {
+    font-size: 12px;
+    line-height: 1, 16;
+    letter-spacing: 0.03em;
+  }
 }
 
 .transform input {
@@ -1207,10 +1260,14 @@ input:focus {
   content: "";
   position: absolute;
   display: block;
-  width: 20%;
   height: 1px;
   background-color: var(--accent-color);
-  right: 67px;
+}
+@media screen and (max-width: 1200px) {
+  .checkbox a::after {
+    width: 21%;
+    right: 48px;
+  }
 }
 
 .checkbox input {

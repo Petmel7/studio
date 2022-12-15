@@ -15,12 +15,6 @@
     letter-spacing: 0.03em;
 }
 
-.hidden-title {
-    @media screen and (max-width: 768px) {
-        display: none;
-    }
-}
-
 .applications {
     font-weight: 700;
     font-size: 14px;
@@ -45,12 +39,6 @@
 
 .image li {
     position: relative;
-
-    @media screen and (max-width: 768px) {
-        display: none;
-    }
-
-
 }
 
 .image-team {
@@ -159,5 +147,9 @@
 
 .work{
     padding-top: 0;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }
 
