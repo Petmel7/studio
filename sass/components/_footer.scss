@@ -30,13 +30,17 @@
 }
 
 .footer {
-    margin-bottom: 60px;
-    margin-top: 20px;
+    // margin-bottom: 60px;
+    // margin-top: 20px;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 60px;
+        margin-top: 20px;
+    }
 }
 
-.footer .footer-mail {
-    text-align: center;
-}
+// .footer .footer-mail {
+//     text-align: center;
+// }
 
 .address {
     color: var(--primari-white-color);
@@ -61,14 +65,16 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--primari-white-color);
-    text-align: center;
+    // text-align: center;
 }
 
 .footer-icons {
     display: flex;
     // margin-right: 80px;
-    justify-content: center;
-    margin-bottom: 60px;
+    @media screen and (max-width: 768px) {
+        justify-content: center;
+        margin-bottom: 60px;
+    }
 }
 
 .footer-icons .icons-network:last-child {
@@ -79,9 +85,9 @@
     margin-right: 10px;
 }
 
-.footer-icons .background-icons {
-    justify-content: center;
-}
+// .footer-icons .background-icons {
+//     justify-content: center;
+// }
 
 .background-icons {
     background: rgba(255, 255, 255, 0.1);
@@ -99,9 +105,9 @@
     fill: var(--primari-white-color);
 }
 
-.footer-e-mail {
-    text-align: center;
-}
+// .footer-e-mail {
+//     text-align: center;
+// }
 
 .footer-e-mail input {
     width: 358px;
@@ -111,7 +117,10 @@
     border-radius: 4px;
     background: #2F303A;
     // margin-right: 12px;
-    margin-bottom: 20px;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+    }
+    
 }
 
 ::placeholder {
