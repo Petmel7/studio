@@ -14,16 +14,9 @@
     background-image: linear-gradient( to left, 
     rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),url(../images/overlay.jpg);
 
-    // @media screen and (min-width: 510px) {
-    //     width: 510px;
-    // }
+    @media screen and (max-width: 1200px) {
+        
 
-    // @media screen and (min-width: 798px) {
-    //     width: 798px;
-    // }
-
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
     }
 }
 
@@ -38,11 +31,16 @@
     color: var(--primari-white-color);
     // font-size: 44px;
     // line-height: 1,36;
-    font-size: 26px;
-    line-height: 1,61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     // width: 696px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 26px;
+        line-height: 1,61;
+        }
+
+
 }
