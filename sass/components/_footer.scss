@@ -5,7 +5,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         text-align: center;
     }
 }
@@ -35,7 +35,7 @@
 .footer {
     // margin-bottom: 60px;
     // margin-top: 20px;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         margin-bottom: 60px;
         margin-top: 20px;
     }
@@ -59,11 +59,41 @@
     letter-spacing: 0.03em;
 }
 
-// .flex {
-//     @media screen and (min-width: 768px) {
-//         display: flex;
-//     }
-// }
+.footer-flex {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
+
+.container-flex {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.footer-center {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 165px;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+    }
+}
+
+.footer-center:last-child {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 0;
+    }
+}
 
 .footer-text {
     font-size: 14px;
@@ -71,12 +101,19 @@
     text-transform: uppercase;
     color: var(--primari-white-color);
     // text-align: center;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-top: 0;
+    }
+
+    @media screen and (max-width: 1200px) {
+        margin-top: 0;
+    }
 }
 
 .footer-icons {
     display: flex;
     // margin-right: 80px;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         justify-content: center;
         margin-bottom: 60px;
     }
@@ -111,7 +148,7 @@
 }
 
 .footer-e-mail {
-    @media screen and (max-width: 1200px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: 450px;
         margin-right: auto;
         margin-left: auto;
@@ -131,10 +168,13 @@
         margin-bottom: 20px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-bottom: 20px;
     }
     
+    @media screen and (min-width: 1200px) {
+        margin-right: 12px;
+    }
 }
 
 ::placeholder {
