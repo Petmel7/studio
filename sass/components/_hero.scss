@@ -14,9 +14,9 @@
     background-image: linear-gradient( to left, 
     rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),url(../images/overlay.jpg);
 
-    @media screen and (max-width: 1200px) {
-        // width: 1200px;
-    }
+    // @media screen and (max-width: 768px) {
+    //     width: 480px;
+    // }
 }
 
 .section {
@@ -36,22 +36,23 @@
     margin-left: auto;
     margin-right: auto;
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 390px) and (max-width: 1199px) {
         font-size: 26px;
         line-height: 1,61;
-    }
-
-    .hero-width {
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
-            width: 400px;
-            margin-left: auto;
-            margin-right: auto;
-        }
     }
 
     @media screen and (min-width: 1200px) {
         font-size: 44px;
         line-height: 1,36;
         width: 696px;
+    }
+}
+
+.hero-width {
+    @media screen and (min-width: 390px) and (max-width: 1199px) {
+        width: 400px;
+        // height: 100px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
