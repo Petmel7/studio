@@ -247,6 +247,8 @@ p {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (max-width: 480px) {
   .container {
@@ -318,6 +320,8 @@ p {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (max-width: 480px) {
   .container {
@@ -500,30 +504,30 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
-  .auth-nav .item {
+  .auth-nav__item {
     margin-right: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .auth-nav .item:last-child {
+  .auth-nav__item:last-child {
     margin-right: 0;
   }
 }
 
-.auth-nav .tel {
-  margin-right: 10px;
-}
-
-.auth-nav .focus {
+.auth-nav__focus {
   color: var(--primary-text-color);
   font-weight: 500;
   letter-spacing: 0.02em;
   fill: var(--primary-text-color);
 }
 
-.auth-nav :hover .focus,
-.auth-nav :focus .focus {
+.auth-nav__tel {
+  margin-right: 10px;
+}
+
+.auth-nav__item :hover,
+.auth-nav__item :focus {
   fill: var(--accent-color);
   color: var(--accent-color);
 }
