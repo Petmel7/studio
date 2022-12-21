@@ -247,8 +247,6 @@ p {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (max-width: 480px) {
   .container {
@@ -320,8 +318,6 @@ p {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (max-width: 480px) {
   .container {
@@ -541,11 +537,29 @@ a {
   margin-right: auto;
 }
 
-.overlay {
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/overlay.jpg);
-  background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay.jpg);
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (max-width: 767px) {
+  .overlay {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/heder-mobile.jpg);
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder-mobile.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .overlay {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/heder-tablet.jpg);
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder-tablet.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlay {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/overlay.jpg);
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
 }
 
 .section {
