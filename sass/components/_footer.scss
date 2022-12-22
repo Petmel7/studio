@@ -145,7 +145,7 @@
 //     justify-content: center;
 // }
 
-.background-icons {
+.footer-icons__background {
     background: rgba(255, 255, 255, 0.1);
     display: block;
     border-radius: 50px;
@@ -153,18 +153,18 @@
     height: 44px;
 }
 
-.background-icons:hover {
+.footer-icons__background:hover {
     background-color: var(--accent-color);
 }
 
-.social-network {
+.footer-icons__network {
     width: 20px;
     height: 20px;
     fill: #AFB1B8;
     padding: 12px;
 }
 
-.social-network:hover {
+.footer-icons__network:hover {
     fill: var(--primari-white-color);
 }
 

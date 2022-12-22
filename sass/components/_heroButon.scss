@@ -12,13 +12,13 @@
     border: 1px solid transparent;
 }
 
-.buttons button:hover,
-.buttons button:focus {
+.portfolio-buttons__button:hover,
+.portfolio-buttons__button:focus {
     background-color: var(--accent-color);
     color: var(--primari-white-color);
 }
 
-.buttons {
+.portfolio-buttons {
     margin-bottom: 56px;
     display: flex;
     flex-wrap: wrap;
@@ -26,10 +26,13 @@
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         justify-content: center;
     }
-    // justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+        justify-content: center;
+    }
 }
 
-.section-buttons {
+.portfolio-buttons__button {
     background: #F5F4FA;
     border-radius: 4px;
     font-family: 'Roboto';

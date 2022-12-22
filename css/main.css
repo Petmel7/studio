@@ -252,17 +252,17 @@ p {
 }
 @media screen and (max-width: 480px) {
   .container {
-    width: 479px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 767px;
+    width: 738px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1199px;
+    width: 1170px;
   }
 }
 
@@ -325,17 +325,17 @@ p {
 }
 @media screen and (max-width: 480px) {
   .container {
-    width: 479px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 767px;
+    width: 738px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1199px;
+    width: 1170px;
   }
 }
 
@@ -615,13 +615,13 @@ a {
   border: 1px solid transparent;
 }
 
-.buttons button:hover,
-.buttons button:focus {
+.portfolio-buttons__button:hover,
+.portfolio-buttons__button:focus {
   background-color: var(--accent-color);
   color: var(--primari-white-color);
 }
 
-.buttons {
+.portfolio-buttons {
   margin-bottom: 56px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -630,14 +630,21 @@ a {
       flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .buttons {
+  .portfolio-buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-buttons {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
 
-.section-buttons {
+.portfolio-buttons__button {
   background: #F5F4FA;
   border-radius: 4px;
   font-family: "Roboto";
@@ -650,7 +657,7 @@ a {
   margin-right: 8px;
 }
 @media screen and (max-width: 767px) {
-  .section-buttons {
+  .portfolio-buttons__button {
     margin-bottom: 15px;
   }
 }
@@ -689,19 +696,37 @@ a {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .pictures .pictures-element img {
     width: 350px;
+    height: 290px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pictures .pictures-element img {
+    width: 368px;
+    height: 294px;
   }
 }
 
 .pictures-element {
-  margin-bottom: 30px;
   padding-bottom: 50px;
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
   position: relative;
 }
+@media screen and (max-width: 767px) {
+  .pictures-element {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .pictures-element {
     margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pictures-element {
+    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -711,9 +736,29 @@ a {
   }
 }
 
-.pictures-element:nth-child(9) {
-  margin-right: auto;
-  margin-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .pictures-element:nth-child(3n+3) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .pictures-element:nth-child(n+7) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .pictures-element:nth-child(9) {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pictures-element:nth-child(9) {
+    margin-bottom: 0;
+  }
 }
 
 .offer {
@@ -751,6 +796,11 @@ a {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .block {
     padding: 63px 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .block {
+    padding: 64px 24px;
   }
 }
 
@@ -1305,7 +1355,7 @@ a {
   margin-right: 10px;
 }
 
-.background-icons {
+.footer-icons__background {
   background: rgba(255, 255, 255, 0.1);
   display: block;
   border-radius: 50px;
@@ -1313,18 +1363,18 @@ a {
   height: 44px;
 }
 
-.background-icons:hover {
+.footer-icons__background:hover {
   background-color: var(--accent-color);
 }
 
-.social-network {
+.footer-icons__network {
   width: 20px;
   height: 20px;
   fill: #AFB1B8;
   padding: 12px;
 }
 
-.social-network:hover {
+.footer-icons__network:hover {
   fill: var(--primari-white-color);
 }
 
@@ -1456,7 +1506,7 @@ a {
   padding: 40px;
 }
 
-.styles-button {
+.modal-cross__button {
   position: absolute;
   top: 8px;
   right: 8px;
