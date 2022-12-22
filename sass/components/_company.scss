@@ -1,6 +1,6 @@
 /* Company */
 
-.company {
+.customers {
     display: flex;
     // flex-wrap: wrap;
     justify-content: center;
@@ -14,7 +14,7 @@
     }
 }
 
-.company-logo {
+.customers-company__logo {
     // width: 223px;
     // height: 92px;
     border-radius: 4px;
@@ -38,12 +38,12 @@
 }
 }
 
-.company-logo:hover {
+.customers-company__logo:hover {
     fill: #2196F3;
     border-color: #2196F3;
 }
 
-.company-name {
+.customers-company {
     // margin-right: 30px;
     // margin-bottom: 26px;
 
@@ -62,31 +62,31 @@
     }
 }
 
-.company-name:last-child {
+.customers-company:last-child {
     @media screen and (min-width: 1200px) {
         margin-right: 0;
     }
 }
 
-.company-name:nth-child(2n+2) {
+.customers-company:nth-child(2n+2) {
     @media screen and (max-width: 767px) {
         margin-right: 0;
     }
 }
 
-.company-name:nth-child(n+5) {
+.customers-company:nth-child(n+5) {
     @media screen and (max-width: 767px) {
         margin-bottom: 0;
     }
 }
 
-.company-name:nth-child(3n+3) {
+.customers-company:nth-child(3n+3) {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-right: 0;
     }
 }
 
-.company-name:nth-child(n+4) {
+.customers-company:nth-child(n+4) {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-bottom: 0;
     }
