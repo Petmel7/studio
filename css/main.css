@@ -515,14 +515,14 @@ a {
   }
 }
 
-.auth-nav__focus {
+.auth-nav__styles {
   color: var(--primary-text-color);
   font-weight: 500;
   letter-spacing: 0.02em;
   fill: var(--primary-text-color);
 }
 
-.auth-nav__tel {
+.auth-nav__margen {
   margin-right: 10px;
 }
 
@@ -603,7 +603,7 @@ a {
 }
 
 /* HeroButton */
-.button {
+.hero-button {
   background-color: var(--accent-color);
   color: var(--primari-white-color);
   font-weight: 700;
@@ -792,7 +792,7 @@ a {
   }
 }
 
-.icon {
+.feature-list__icon {
   background-color: #F5F4FA;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -802,61 +802,61 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  .feature-list .item {
+  .feature-list__item {
     margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .feature-list .item {
+  .feature-list__item {
     width: 354px;
     margin-right: 30px;
     margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .feature-list .item {
+  .feature-list__item {
     width: 270px;
     margin-right: 30px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .feature-list .item:last-child {
+  .feature-list__item:last-child {
     margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .feature-list .item:last-child {
+  .feature-list__item:last-child {
     margin-right: 0;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .feature-list .item:nth-child(2n+2) {
+  .feature-list__item:nth-child(2n+2) {
     margin-right: 0;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .feature-list .item:nth-child(n+3) {
+  .feature-list__item:nth-child(n+3) {
     margin-bottom: 0;
   }
 }
 
-.feature-list .title {
+.feature-list__title {
   color: var(--title-text-color);
   font-size: 14px;
   line-height: 1, 14;
   letter-spacing: 0.03em;
 }
 @media screen and (max-width: 767px) {
-  .feature-list .title {
+  .feature-list__title {
     text-align: center;
   }
 }
 
-.feature-list p {
+.feature-list__description {
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1, 71;
@@ -877,7 +877,27 @@ a {
   letter-spacing: 0.03em;
 }
 
-.applications {
+.image-work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.image-work__offers {
+  position: relative;
+  height: 294px;
+  width: 370px;
+  margin-right: 30px;
+}
+
+.image-work__offers:last-child {
+  margin-right: 0;
+}
+
+.image-work__description {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -892,31 +912,8 @@ a {
   right: 0;
 }
 
-.image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.image li {
-  position: relative;
-}
-
-.image-team {
-  height: 294px;
-  width: 370px;
-  margin-right: 30px;
-}
-
-.image-team:last-child {
-  margin-right: 0;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .name {
+  .team-name {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -928,7 +925,7 @@ a {
   }
 }
 @media screen and (min-width: 1200px) {
-  .name {
+  .team-name {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -939,59 +936,59 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  .name-photo {
+  .team-name__photo {
     margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .name-photo {
+  .team-name__photo {
     margin-right: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .name-photo:last-child {
+  .team-name__photo:last-child {
     margin-right: 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .name-photo:last-child {
+  .team-name__photo:last-child {
     margin-bottom: 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .name-photo img {
+  .team-name__photo img {
     width: 450px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .name-photo img {
+  .team-name__photo img {
     width: 354px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .name-photo {
+  .team-name__photo {
     margin-right: 30px;
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .name-photo:nth-child(2n+2) {
+  .team-name__photo:nth-child(2n+2) {
     margin-right: 0;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .name-photo:nth-child(n+3) {
+  .team-name__photo:nth-child(n+3) {
     margin-bottom: 0;
   }
 }
 
-.name-photo {
+.team-name__photo {
   text-align: center;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -999,7 +996,7 @@ a {
   background-color: var(--primari-white-color);
 }
 
-.name h3 {
+.team-name__surname {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -1007,7 +1004,7 @@ a {
   margin-top: 30px;
 }
 
-.name p {
+.team-name__profession {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1, 18;
@@ -1015,7 +1012,7 @@ a {
   padding-bottom: 30px;
 }
 
-.social {
+.social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1025,26 +1022,26 @@ a {
   padding-bottom: 30px;
 }
 
-.social li {
+.social-icons li {
   margin-right: 10px;
 }
 
-.social-network {
+.social-icons__network {
   width: 20px;
   height: 20px;
   fill: #AFB1B8;
   padding: 12px;
 }
 
-.social .social-icons:hover {
+.social-icons__background:hover {
   background-color: var(--accent-color);
 }
 
-.social .social-network:hover {
+.social-icons__network:hover {
   fill: #FFFFFF;
 }
 
-.social-icons {
+.social-icons__background {
   background-color: var(--primari-white-color);
   border-radius: 50px;
   display: block;
@@ -1052,7 +1049,7 @@ a {
   height: 44px;
 }
 
-.social-icons:last-child {
+.social-icons__background:last-child {
   margin-right: 0;
 }
 
