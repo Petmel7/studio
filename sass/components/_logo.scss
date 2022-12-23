@@ -17,3 +17,33 @@
 .border {
     border-bottom: 1px solid #ECECEC;
 }
+
+.menu-button {
+    width: 25px;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+
+
+.menu-button svg {
+    @media screen and (min-width: 767px) {
+        display: none;
+        // margin-left: auto;
+    }
+}
+
+.menu-button .icon-close {
+    display: none;
+}
+
+.menu-button.is-open .icon-close {
+    display: block;
+}
+
+.menu-button.is-open .icon-menu {
+    display: none;
+}
