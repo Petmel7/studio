@@ -1,3 +1,35 @@
+/* Main-nav */
+
+.main-nav {
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-around;
+
+    @media screen and (max-width: 767px) {
+        padding: 16px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        align-items: center;
+        // justify-content: space-around;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        // justify-content: space-around;
+    }
+}
+
+.main-nav .logo {
+    @media screen and (max-width: 767px) {
+        margin-right: 270px;
+    }
+}
+
 .site-nav > .portfolio {
     color: var(--accent-color);
 }
@@ -17,6 +49,8 @@
 .border {
     border-bottom: 1px solid #ECECEC;
 }
+
+// Menu-button
 
 .menu-button {
     width: 25px;
