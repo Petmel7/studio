@@ -21,16 +21,36 @@
 </head>
 <body>
     
-    <header class="container">
+    <header class="page-header container">
         <nav class="main-nav">
         <a href="" class="logo">Web<span class="logo-black">Studio</span></a>
-
-        <button type="button" class="menu-button is-open" data-menu-button>
+    
+        <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
             <svg witdh="18px" height="18px" aria-label="">
-                <use class="icon-close" href="./images/burger-menu.svg#icon-close"></use>
-                <use class="icon-menu" href="./images/burger-menu.svg#icon-menu"></use>
+                <use class="icon-menu" href="./images/burger-menu.svg#icon-close"></use>
+                <use class="icon-close" href="./images/burger-menu.svg#icon-menu"></use>
             </svg>
         </button>
+
+        <div class="menu-container" id="menu-container" data-menu>
+          <ul class="mobile-navigation">
+            <li class="mobile-navigation__text"><a href="">Студія</a></li>
+            <li class="mobile-navigation__text"><a href="./portfolio.html">Портфоліо</a></li>
+            <li class="mobile-navigation__text"><a href="">Контакти</a></li>
+          </ul>
+
+          <ul class="mobile-contacts">
+            <li class="mobile-contacts__phone"><a href="">+38 096 111 11 11</a></li>
+            <li class="mobile-contacts__mail"><a href="">info@devstudio.com</a></li>
+          </ul>
+
+          <ul class="social-network">
+            <li class="social-network__text"><a href="">Instagram</a></li>
+            <li class="social-network__text"><a href="">Twitter</a></li>
+            <li class="social-network__text"><a href="">Twitter</a></li>
+            <li class="social-network__text"><a href="">LinkedIn</a></li>
+          </ul>
+        </div>
         
         <ul class="site-nav">
             <li class="site-nav__item"><a href="" class="site-nav__portfolio">Студія</a></li>
