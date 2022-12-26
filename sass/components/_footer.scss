@@ -24,10 +24,6 @@
     // // }
 }
 
-// .footer {
-//     margin-right: 70px;
-// }
-
 .footer-mail {
     margin: 9px;
 }
@@ -47,17 +43,11 @@
 }
 
 .footer {
-    // margin-bottom: 60px;
-    // margin-top: 20px;
     @media screen and (max-width: 767px) {
         margin-bottom: 60px;
         margin-top: 20px;
     }
 }
-
-// .footer .footer-mail {
-//     text-align: center;
-// }
 
 .address {
     color: var(--primari-white-color);
@@ -114,7 +104,6 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--primari-white-color);
-    // text-align: center;
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-top: 0;
     }
@@ -126,7 +115,6 @@
 
 .footer-icons {
     display: flex;
-    // margin-right: 80px;
     @media screen and (max-width: 767px) {
         justify-content: center;
         margin-bottom: 60px;
@@ -140,10 +128,6 @@
 .footer-icons__social{
     margin-right: 10px;
 }
-
-// .footer-icons .background-icons {
-//     justify-content: center;
-// }
 
 .footer-icons__background {
     background: rgba(255, 255, 255, 0.1);
@@ -178,15 +162,12 @@
 }
 
 .footer-e-mail input {
-    // width: 358px;
-    // height: 50px;
     padding: 18px;
     padding-right: 190px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background: #2F303A;
-    // margin-right: 12px;
     @media screen and (max-width: 768px) {
         margin-bottom: 20px;
     }
@@ -208,8 +189,6 @@
 }
 
 .footer-button {
-    // width: 200px;
-    // height: 50px;
     padding: 40px;
     font-weight: 700;
     font-size: 16px;

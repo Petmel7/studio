@@ -30,9 +30,6 @@
 }
 
 .pictures-element {
-    // width: 450px;
-    // margin-right: 30px;
-    // margin-bottom: 30px;
     padding-bottom: 50px;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
@@ -101,7 +98,6 @@
 }
 
 .pictures-element__slide {
-    // padding: 64px 24px;
     position: absolute;
     top: 0;
     background: rgba(33, 150, 243, 0.9);
@@ -111,8 +107,6 @@
     overflow: hidden;
 
     @media screen and (max-width: 767px) {
-        // width: 450px;
-        // height: 350px;
         padding: 105px 35px;
     }
 
@@ -133,7 +127,7 @@
 }
 
 .pictures-element:focus .pictures-element__slide,
-.pictures-element:hover .pictures-element__slide{
+.pictures-element:hover .pictures-element__slide {
     transform: translateY(0);
     opacity: 1;
 }

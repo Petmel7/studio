@@ -14,9 +14,9 @@
 //     }
 // });
 
-// (() => {
-//     const menuBtnRef = document.querySelector("[data-hero]");
-//     menuBtnRef.addEventListener("windowWidth < 480", () => {
-//         menuBtnRef.classList.toggle("container"); 
-//     });
-// })();
+(() => {
+    const menuBtnRef = document.querySelector("[data-hero]");
+    menuBtnRef.addEventListener("windowWidth < 480", () => {
+        menuBtnRef.classList.toggle("container"); 
+    });
+})();
