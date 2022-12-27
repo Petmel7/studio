@@ -402,6 +402,7 @@ a {
     transition: -webkit-transform 500ms linear;
     transition: transform 500ms linear;
     transition: transform 500ms linear, -webkit-transform 500ms linear;
+    z-index: 90;
   }
   .menu-container.is-open {
     -webkit-transform: translateX(0);
@@ -492,7 +493,7 @@ a {
   .social-network__text a::after {
     content: "";
     margin-left: 10px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
   }
@@ -537,7 +538,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 70px;
+    margin-left: 90px;
   }
 }
 
@@ -606,13 +607,17 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 315px;
+    margin-left: 250px;
   }
 }
 
+.auth-nav__item {
+  fill: var(--primary-text-color);
+}
 @media screen and (min-width: 1200px) {
   .auth-nav__item {
-    margin-right: 30px;
+    margin-left: 30px;
+    margin-right: 10px;
   }
 }
 
@@ -626,15 +631,9 @@ a {
   color: var(--primary-text-color);
   font-weight: 500;
   letter-spacing: 0.02em;
-  fill: var(--primary-text-color);
 }
 
-.auth-nav__margen {
-  margin-right: 10px;
-}
-
-.auth-nav__item :hover,
-.auth-nav__item :focus {
+.auth-nav li:hover svg ~ a {
   fill: var(--accent-color);
   color: var(--accent-color);
 }
@@ -731,6 +730,8 @@ a {
   border-radius: 4px;
   padding: 15px 40px;
   border: 1px solid transparent;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .portfolio-buttons__button:hover,
@@ -764,7 +765,6 @@ a {
 
 .portfolio-buttons__button {
   background: #F5F4FA;
-  border-radius: 4px;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
@@ -773,6 +773,9 @@ a {
   border: 1px solid transparent;
   padding: 6px 22px;
   margin-right: 8px;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 @media screen and (max-width: 767px) {
   .portfolio-buttons__button {
@@ -1514,14 +1517,11 @@ a {
   border-radius: 4px;
   background: #2F303A;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .footer-e-mail input {
     margin-bottom: 20px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-e-mail input {
-    margin-bottom: 20px;
+    padding: 18px;
+    padding-right: 265px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1698,18 +1698,19 @@ a {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 @media screen and (max-width: 1199px) {
   .form-field input {
-    padding: 10px 171px;
+    width: 100%;
+    padding: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
   .form-field input {
-    padding: 10px 188px;
+    width: 100%;
+    padding: 10px;
   }
 }
 
