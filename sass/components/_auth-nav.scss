@@ -1,25 +1,46 @@
 /* Auth-nav */
 
 .auth-nav {
-    // display: inline-block;
-
     @media screen and (max-width: 767px) {
         display: none;
     }
 
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 170px;
+    }
+
     @media screen and (min-width: 1200px) {
         display: flex;
-        margin-left: 250px;
+        margin-left: 300px;
     }
 }
 
 .auth-nav__item {
-    fill: var(--primary-text-color);
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 8px;
+        margin-bottom: 10px;
+    }
+}
 
+.auth-nav__item:last-child {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 0;
+    }
+}
+
+.auth-nav__item:nth-child(1) {
+    margin-right: 0;
+}
+
+.auth-nav__item {
     @media screen and (min-width: 1200px) {
         margin-left: 30px;
         margin-right: 10px;
     }
+}
+
+.auth-nav__item:nth-child(1) {
+    margin-left: 0;
 }
 
 .auth-nav__item:last-child {
@@ -33,14 +54,15 @@
     color: var(--primary-text-color);
     font-weight: 500;
     letter-spacing: 0.02em;
-    // fill: var(--primary-text-color);
+    fill: var(--primary-text-color);
 }
 
-.auth-nav li:hover svg ~ a {
+.auth-nav__styles svg {
+    margin-right: 10px;
+}
+
+.auth-nav__item :hover,
+.auth-nav__item :focus {
     fill: var(--accent-color);
     color: var(--accent-color);
 }
-
-// .auth-nav__styles:hover {
-// color: red;
-// }

@@ -402,7 +402,7 @@ a {
     transition: -webkit-transform 500ms linear;
     transition: transform 500ms linear;
     transition: transform 500ms linear, -webkit-transform 500ms linear;
-    z-index: 90;
+    z-index: 50;
   }
   .menu-container.is-open {
     -webkit-transform: translateX(0);
@@ -602,23 +602,46 @@ a {
     display: none;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .auth-nav {
+    width: 170px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .auth-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 250px;
+    margin-left: 300px;
   }
 }
 
-.auth-nav__item {
-  fill: var(--primary-text-color);
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .auth-nav__item {
+    margin-right: 8px;
+    margin-bottom: 10px;
+  }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .auth-nav__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.auth-nav__item:nth-child(1) {
+  margin-right: 0;
+}
+
 @media screen and (min-width: 1200px) {
   .auth-nav__item {
     margin-left: 30px;
     margin-right: 10px;
   }
+}
+
+.auth-nav__item:nth-child(1) {
+  margin-left: 0;
 }
 
 @media screen and (min-width: 1200px) {
@@ -631,9 +654,15 @@ a {
   color: var(--primary-text-color);
   font-weight: 500;
   letter-spacing: 0.02em;
+  fill: var(--primary-text-color);
 }
 
-.auth-nav li:hover svg ~ a {
+.auth-nav__styles svg {
+  margin-right: 10px;
+}
+
+.auth-nav__item :hover,
+.auth-nav__item :focus {
   fill: var(--accent-color);
   color: var(--accent-color);
 }
