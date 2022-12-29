@@ -343,6 +343,15 @@ a {
   color: #000000;
 }
 
+.border {
+  border-bottom: 1px solid #ECECEC;
+}
+@media screen and (max-width: 480px) {
+  .border {
+    width: 480px;
+  }
+}
+
 .menu-button {
   width: 25px;
   display: -webkit-inline-box;

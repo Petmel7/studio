@@ -40,9 +40,16 @@
     color: #000000;
 }
 
-// .border {
-//     border-bottom: 1px solid #ECECEC;
-// }
+.border {
+    border-bottom: 1px solid #ECECEC;
+    @media screen and (max-width: 480px) {
+        width: 480px;
+    }
+
+    // @media screen and (min-width: 480px) {
+    //     width: 480px;
+    // }
+}
 
 // Menu-button
 
