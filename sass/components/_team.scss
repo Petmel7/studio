@@ -155,11 +155,13 @@
     padding: 12px;
 }
 
-.social-icons__background:hover {
+.social-icons__background:hover,
+.social-icons__background:focus {
     background-color: var(--accent-color);
 }
 
-.social-icons__network:hover {
+.social-icons__network:hover,
+.social-icons__network:focus {
     fill: #FFFFFF;
 }
  

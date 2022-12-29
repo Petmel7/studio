@@ -15,6 +15,10 @@
     }
 }
 
+.auth-nav__transform {
+    transform: translateY(2px);
+}
+
 .auth-nav__item {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-right: 8px;
@@ -55,6 +59,7 @@
     font-weight: 500;
     letter-spacing: 0.02em;
     fill: var(--primary-text-color);
+    display: flex;
 }
 
 .auth-nav__styles svg {

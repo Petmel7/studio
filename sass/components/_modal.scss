@@ -39,7 +39,8 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.modal-cross__button:hover {
+.modal-cross__button:hover,
+.modal-cross__button:focus {
     fill: var(--accent-color)
 }
 
@@ -97,19 +98,15 @@
 .form-field input {
     margin: 0;
     box-sizing: border-box;
-    // width: 448px;
-    // padding: 10px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 
     @media screen and (max-width: 1199px) {
-        // padding: 10px 171px;
         width: 100%;
         padding: 10px;
     }
 
     @media screen and (min-width: 1200px) {
-        // padding: 10px 188px;
         width: 100%;
         padding: 10px;
     }
@@ -150,9 +147,6 @@ input:focus {
         padding-top: 12px;
         padding-bottom: 100px;
         padding-right: 240px;
-        // width: 94%;
-        // height: 100px;
-        // padding: 10px;
     }
 }
 

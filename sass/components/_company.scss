@@ -35,7 +35,8 @@
 }
 }
 
-.customers-company__logo:hover {
+.customers-company__logo:hover,
+.customers-company__logo:focus {
     fill: #2196F3;
     border-color: #2196F3;
 }
