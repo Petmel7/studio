@@ -29,6 +29,7 @@
             </svg>
         </button>
 
+    <div class="menu">
         <div class="menu-container is-open" id="menu-container" data-menu>
           <ul class="mobile-navigation">
             <li class="mobile-navigation__text"><a href="">Студія</a></li>
@@ -48,6 +49,7 @@
             <li class="social-network__text"><a href="">LinkedIn</a></li>
           </ul>
         </div>
+    </div>
         
         <ul class="site-nav">
             <li class="site-nav__item"><a href="" class="site-nav__portfolio">Студія</a></li>
@@ -317,10 +319,15 @@
                 <textarea name="" id="" cols="" rows="" placeholder="Введіть текст"></textarea>
             </li>
             </ul>
-            <div class="checkbox transform">
-                <input type="checkbox" name="topic" value="js" id="js"/>
-                <label for="">Погоджуюся з розсилкою та приймаю<a href="">Умови договору</a></label>
-            </div>
+            <!-- <div class="checkbox transform"> -->
+            <label class="modal-label" for="click">
+                <input class="modal-label__checkbox" type="checkbox" name="topic" value="js" id="click"/>
+                <span class="modal-label__icon"></span>
+                <p class="modal-label__text">Погоджуюся з розсилкою та приймаю<a href="">Умови договору</a></p>
+            </label>
+                <!-- <label for="" class="modal-label">Погоджуюся з розсилкою та приймаю<a href="">Умови договору</a></label> -->
+                <!-- <span class="checkbox-icon"></span> -->
+            <!-- </div> -->
 
             <div class="submit">
                 <button type="submit" class="submit-button">Відправити</button>
