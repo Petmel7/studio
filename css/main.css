@@ -1867,25 +1867,30 @@ input:focus {
 }
 
 .modal-label__checkbox:checked + .modal-label__icon {
+  width: 13px;
+  height: 11px;
+  border-color: var(--accent-color);
   background-color: var(--accent-color);
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+  background-origin: content-box;
 }
 
 .modal-label__icon {
-  display: inline-block;
-  width: 14px;
-  height: 13px;
+  width: 13px;
+  height: 11px;
   margin-right: 8px;
-  border: 3px solid var(--title-text-color);
-  border-radius: 3px;
-  background-image: url(../images/icon-check.svg);
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
 }
 
 .modal-label__text {
   color: var(--primary-text-color);
   margin-bottom: 30px;
   text-align: center;
+  margin-right: 5px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .modal-label__text {
     font-size: 12px;
     line-height: 1, 16;
@@ -1893,8 +1898,22 @@ input:focus {
   }
 }
 
-.modal-label__text a {
+.modal-label__link a {
   color: var(--accent-color);
+}
+@media screen and (max-width: 1199px) {
+  .modal-label__link a {
+    font-size: 12px;
+    line-height: 1, 16;
+    letter-spacing: 0.03em;
+  }
+}
+
+.modal-label__link a::after {
+  content: "";
+  margin-left: auto;
+  display: block;
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .submit {
