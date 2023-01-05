@@ -46,7 +46,7 @@
 
 // Другий варіант, коротший
 
-// const monthNumber = prompt('Enter month number');
+// const monthNumber = Number(prompt('Enter month number'));
 
 // if (monthNumber === 1 || monthNumber == 2 || monthNumber === 12) {
 //     console.log('Зима');
@@ -56,16 +56,86 @@
 //     console.log('Літо');
 // } else if (monthNumber === 9 || monthNumber === 10 || monthNumber === 11) {
 //     console.log('Осінь');
+// } else {
+//     console.log('Дані не валідні');
 // }
 
 // Третій варіант
 
-// const monthNumber = prompt('Enter month number');
+// const monthNumber = Number(prompt('Enter month number'));
 
-// if (monthNumber => 3 && monthNumber <= 5) {
-//     console.log('Весна')
-// } else if (monthNumber => 6 && monthNumber <= 8) {
+// if (monthNumber >= 1 && monthNumber <= 2 || monthNumber === 12) {
+//     console.log('Зима');
+// } else if (monthNumber >= 3 && monthNumber <= 5) {
+//     console.log('Весна');
+// } else if (monthNumber >= 6 && monthNumber <= 8) {
 //     console.log('Літо');
-// } else if (monthNumber => 9 && monthNumber <= 11) {
+// } else if (monthNumber >= 9 && monthNumber <= 11) {
 //     console.log('Осінь');
-// } 
+// } else {
+//     console.log('Дані невалідні');
+// }
+
+// Програма яка перевіряє логін пароль користувача і виводи привітання
+
+// const login = 'user@gmail.com'
+// const password = '1354587'
+
+// const userLogin = prompt('Enter login');
+// const userPassword = prompt('Enter password');
+
+// if (login === userLogin && password === userPassword) {
+//     console.log('Wellcome');
+// } else {
+//     console.log('Error');
+// }
+
+// Другий спосіб тернарний оператор
+
+// const login = 'user@gmail.com'
+// const password = '1354587'
+
+// const userLogin = prompt('Enter login');
+// const userPassword = prompt('Enter password');
+
+// const result = login === userLogin && password === userPassword ? 'Wellcom' : 'Error'
+
+// console.log('result', result);
+
+// Третій варіант свіч кейс
+
+// const period = prompt('Enter period');
+
+// if (period === 'День') {
+//     console.log('5.99');
+// } else if (period === 'Тиждень') {
+//     console.log('10.99');
+// } else if (period === 'Місяць') {
+//     console.log('50.99');
+// } else if (period === 'Рік') {
+//     console.log('100.99');
+// }
+
+// const period = prompt('Enter period');
+
+// switch (period) {
+//     case 'День':
+//     console.log('5.99');
+//     break;
+
+//     case 'Тиждень':
+//     console.log('10.99');
+//     break;
+
+//     case 'Місяць':
+//     console.log('50.99');
+//     break;
+
+//     case 'Рік':
+//     console.log('100.99');
+//     break;
+
+//     default:
+//     console.log('Error');
+//     break;
+// }
