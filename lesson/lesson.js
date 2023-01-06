@@ -194,4 +194,40 @@
 //     console.log(i);
 // }
 
+// Другий спосіб
+
+// const min = 20;
+// const max = 100;
+
+// for (let i = min; i <= 50; i += 1) {
+    
+//     console.log(i);
+// }
+
+// Цикл while and do while
+
+// Написати змінну
+// Попросити користувача номер
+// Написати цикл while do while
+
+// let number = 0;
+
+// while (number !== null && number <= 100) {
+//     number = prompt ('Enter number');
+//     console.log('number', number);
+// }
+
+let number = 0;
+
+do {
+    number = prompt ('Enter number');
+    console.log('number', number);
+} while (number !== null && number <= 100);
+
+
+
+
+
+
+
 
