@@ -139,3 +139,59 @@
 //     console.log('Error');
 //     break;
 // }
+
+// Цикл for який виводить в консоль браузера числа за зменшенням від max до min
+
+// const min = 20;
+// const max = 100;
+
+// for (let i = min; i <= max; i += 1) {
+//     console.log(i);
+// } 
+
+// Вивести числа кратні 10, перший варіант
+
+// const min = 20;
+// const max = 100;
+
+// for (let i = min; i <= max; i += 10) {
+//     console.log(i);
+// } 
+
+// Другий варіант
+
+// const min = 20;
+// const max = 100;
+
+// for (let i = min; i <= max; i += 1) {
+//     if (i % 10 === 0) {
+//         console.log(i);
+//     }
+//     continue;
+// } 
+
+// Третій варіфнт
+
+// const min = 20;
+// const max = 100;
+
+// for (let i = min; i <= max; i += 1) {
+//     if (i % 10 !== 0) {
+//       continue;  
+//     }
+//     console.log(i);
+// } 
+
+// Зупинка лічильника на 50
+
+// const min = 20;
+// const max = 100;
+
+// for (let i = min; i <= max; i += 1) {
+//     if (i === 50) {
+//     break;
+//     }
+//     console.log(i);
+// }
+
+
