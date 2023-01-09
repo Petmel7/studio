@@ -217,17 +217,35 @@
 //     console.log('number', number);
 // }
 
-let number = 0;
+// let number = 0;
 
-do {
-    number = prompt ('Enter number');
-    console.log('number', number);
-} while (number !== null && number <= 100);
+// do {
+//     number = prompt ('Enter number');
+//     console.log('number', number);
+// } while (number !== null && number <= 100);
 
+// Знайти в масиві саму меншу число (Саму меншу монетку)
 
+// const numbers = [23, 53, 8, 43, 32, 12, 15, 20, 5, 1,];
+// let smallNumber = numbers[0];
 
+// for (const number of numbers) {
+//     if (number < smallNumber) {
+//         smallNumber = number;
+//     }
+// }
 
+// console.log(smallNumber);
 
+// Домашнє завдання вивисти з масиву найбільше число
 
+// const numbers = [23, 53, 8, 43, 32, 12, 15, 20, 5, 1,];
+// let bigNumber = numbers[0];
 
+// for (const number of numbers) {
+//     if (number > bigNumber) {
+//         bigNumber = number;
+//     }
+// }
 
+// console.log(bigNumber);
