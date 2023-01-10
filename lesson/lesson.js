@@ -224,6 +224,8 @@
 //     console.log('number', number);
 // } while (number !== null && number <= 100);
 
+// Масиви
+
 // Знайти в масиві саму меншу число (Саму меншу монетку)
 
 // const numbers = [23, 53, 8, 43, 32, 12, 15, 20, 5, 1,];
@@ -249,3 +251,62 @@
 // }
 
 // console.log(bigNumber);
+
+// Добавлення і заміні імя в масиві
+
+// const clients = ['Mango', 'Ajacs', 'Poly'];
+
+// clients[0] = 'Kiwi';
+// // console.log(clients[0]);
+// clients[3] = 'Alex';
+// console.log(clients);
+
+// push Добавляє елементи в кінець масиву
+
+// const numbers = [1, 2, 3, 4,];
+// numbers.push(5, 6, 7,);
+// console.log(numbers);
+
+// slice Вирізаеє елементи з масиву
+
+// const numbers = [1, 2, 3, 4, 5,];
+// console.log(numbers.slice(3));
+// console.log(numbers);
+
+// const numbers = [1, 7, 3, 6, 5,];
+// console.log(numbers.indexOf(3));
+// console.log(numbers);
+
+// Базові операції з масивом
+
+// Створити масив styles з елементами <<Джаз>> і <<Блюз>>
+// Добавити <<Роке-н-Ролл>> в кінець
+// Замінити значення в середині на <<Класика>>
+// Видалити перший елемент і виссти його в консоль
+// Вставити <<Реп>> і <<Регі>> на початок масиву
+
+// const styles = ['Джаз', 'Блюз'];
+// styles.push('Рок-н-Ролл');
+// console.log(styles);
+
+// styles.splice(1, 1, 'Класика');
+// console.log(styles);
+
+// // Змінна const deleteStyles для того щоб зберегти видалиний елемент як що він буде потрібний в подальшому
+// const deleteStyles = styles.shift();
+// console.log(styles);
+
+// styles.unshift('Реп', 'Регі');
+// console.log(styles);
+
+const users = ["Mango", "Poly", "Kiwi"];
+
+for (let user of users) {
+    console.log(users.indexOf(user));
+    console.log(user);
+}
+
+
+
+
+
