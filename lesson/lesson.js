@@ -299,13 +299,27 @@
 // styles.unshift('Реп', 'Регі');
 // console.log(styles);
 
-const users = ["Mango", "Poly", "Kiwi"];
+// const users = ["Mango", "Poly", "Kiwi"];
 
-for (let user of users) {
-    console.log(users.indexOf(user));
-    console.log(user);
+// for (let user of users) {
+//     console.log(users.indexOf(user));
+//     console.log(user);
+// }
+
+// Тернарний апарат для логшнів
+
+const logins = ['Hldndjv', 'Jkfkltn', 'Liurhvh', 'Yjfngkl'];
+
+const findLogin = function (allLogins, loginToFind) {
+    return allLogins.includes(loginToFind)
+    ? `Користувач ${loginToFind} знайдений`
+    : `Користувач ${loginToFind} не знайдений`
 }
 
+console.log(findLogin(logins, 'Hldndjv'));
+console.log(findLogin(logins, 'Gfdcbcb'));
+console.log(findLogin(logins, 'Liurhvh'));
+console.log(findLogin(logins, 'Tijnkjn'));
 
 
 
