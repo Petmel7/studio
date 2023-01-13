@@ -308,18 +308,53 @@
 
 // Тернарний апарат для логшнів
 
-const logins = ['Hldndjv', 'Jkfkltn', 'Liurhvh', 'Yjfngkl'];
+// const logins = ['Hldndjv', 'Jkfkltn', 'Liurhvh', 'Yjfngkl'];
 
-const findLogin = function (allLogins, loginToFind) {
-    return allLogins.includes(loginToFind)
-    ? `Користувач ${loginToFind} знайдений`
-    : `Користувач ${loginToFind} не знайдений`
-}
+// const findLogin = function (allLogins, loginToFind) {
+//     return allLogins.includes(loginToFind)
+//     ? `Користувач ${loginToFind} знайдений`
+//     : `Користувач ${loginToFind} не знайдений`
+// }
 
-console.log(findLogin(logins, 'Hldndjv'));
-console.log(findLogin(logins, 'Gfdcbcb'));
-console.log(findLogin(logins, 'Liurhvh'));
-console.log(findLogin(logins, 'Tijnkjn'));
+// console.log(findLogin(logins, 'Hldndjv'));
+// console.log(findLogin(logins, 'Gfdcbcb'));
+// console.log(findLogin(logins, 'Liurhvh'));
+// console.log(findLogin(logins, 'Tijnkjn'));
+
+// Добавлення і видалення курсів з корзини
+
+const courses = ["HTML", "CSS", "JavaScript", "React"];
+
+// function addCourse(course) {
+//     if (courses.includes(course)) {
+//         console.log("В вас вже є такий курс");
+//         return;
+//     }
+//     courses.push(course);
+// }
+
+// Стрілочна функція
+
+// const addCourse = (course) => {
+//     if (courses.includes(course)) {
+//         console.log("В вас вже є такий курс");
+//         return;
+//     }
+//     courses.push(course);
+// }
+
+// const removeCourse = (course) => {
+//     const indexCourse = courses.indexOf(course);
+
+//     console.log("removeCourse", removeCourse);
+// }
+
+// addCourse("Express");
+// addCourse("CSS");
+// removeCourse("React");
+// console.log(courses);
+
+
 
 
 
