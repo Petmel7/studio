@@ -323,7 +323,7 @@
 
 // Добавлення і видалення курсів з корзини
 
-const courses = ["HTML", "CSS", "JavaScript", "React"];
+// const courses = ["HTML", "CSS", "JavaScript", "React"];
 
 // function addCourse(course) {
 //     if (courses.includes(course)) {
@@ -362,7 +362,37 @@ const courses = ["HTML", "CSS", "JavaScript", "React"];
 // lastNameLength = 8;
 // console.log(lastName.length);
 
+// const myArray = [];
+//  let i = 5;
 
+//  while (i >= 0) {
+//     myArray.push(i--);
+//  }
+
+//  console.log(myArray);
+
+// const myArray = [];
+
+// for (let i = 1; i < 10; i += 2) {
+//     myArray.push(i);
+// }
+
+// console.log(myArray); 
+
+// const myArray = [];
+
+// for (let i = 9; i > 0; i -= 2) {
+//     myArray.push(i);
+// }
+
+// console.log(myArray);
+
+// const myArr = [2, 3, 4, 5, 6];
+// let total = 0;
+
+// for (let i = 0; i < myArr.length; i++) {
+//     console.log(i);
+// }
 
 
 
