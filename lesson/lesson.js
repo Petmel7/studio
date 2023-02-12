@@ -354,6 +354,16 @@ const courses = ["HTML", "CSS", "JavaScript", "React"];
 // removeCourse("React");
 // console.log(courses);
 
+// let remainder = 11 % 3;
+// console.log(remainder);
+
+// let lastNameLength = 0;
+// const lastName = "Lovelace"
+// lastNameLength = 8;
+// console.log(lastName.length);
+
+
+
 
 
 
