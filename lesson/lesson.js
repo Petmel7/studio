@@ -394,20 +394,19 @@
 //     console.log(i);
 // }
 
-const myArr = [2, 3, 4, 5, 6];
-
-let total = 0;
-
-for (let i = 0; i < myArr.length; i++) {
-  total += myArr.length;
-  console.log(total);
-}
-
-// const arr = [10, 9, 8, 7, 6];
-
-// for (let i = 0; i < arr.length; i++) {
-//    console.log(arr[i]);
+// function multiplyAll(arr) {
+//   let product = 1;
+//   // Змініть код лише під цим рядком
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr[i].length; j++) {
+//       console.log(arr[i][j]);
+//     }
+//   }
+//   // Змініть код лише над цим рядком
+//   return product;
 // }
+
+// multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
 
 
 
