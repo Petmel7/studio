@@ -408,6 +408,73 @@
 
 // multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
 
+// Знаходимо кнопку героя та модальне вікно
+// let heroButton = document.querySelector(".hero-button");
+// let modal = document.getElementById("myModal");
+
+// // Знаходимо елемент для закриття модального вікна
+// let closeBtn = document.querySelector(".close");
+
+// // Додаємо обробник події для кнопки героя
+// heroButton.addEventListener("click", function() {
+//   // Показуємо модальне вікно
+//   modal.style.display = "block";
+// });
+
+// // Додаємо обробник події для елемента закриття
+// closeBtn.addEventListener("click", function() {
+//   // Ховаємо модальне вікно
+//   modal.style.display = "none";
+// });
+
+
+// Отримуємо модальне вікно
+let modal = document.getElementById("myModal");
+
+// Отримуємо кнопку, яка відкриває модальне вікно
+let btn = document.getElementsByClassName("hero-button")[0];
+
+// Отримуємо елемент span, який закриває модальне вікно
+let span = document.getElementsByClassName("close")[0];
+
+// Отримуємо форму
+let form = document.querySelector('form');
+
+// Отримуємо елементи форми
+let nameInput = document.getElementById("name");
+let surnameInput = document.getElementById("surname");
+let messageInput = document.getElementById("message");
+
+// Додаємо обробник події для кнопки відправити
+form.addEventListener('submit', function(e) {
+  e.preventDefault(); // запобігаємо перезавантаженню сторінки після натискання кнопки відправити
+  let name = nameInput.value;
+  let surname = surnameInput.value;
+  let message = messageInput.value;
+  console.log("Ім'я: " + name);
+  console.log("Прізвище: " + surname);
+  console.log("Повідомлення: " + message);
+  modal.style.display = "none"; // закриваємо модальне вікно після відправлення форми
+});
+
+// Додаємо обробник події для кнопки відкриття модального вікна
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// Додаємо обробник події для закривання модального вікна
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Додаємо обробник події для закривання модального вікна при кліку на будь-яке місце поза модальним вікном
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
 
 
 

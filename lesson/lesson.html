@@ -2,11 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Назва твого сайту</title>
+    <link rel="stylesheet" href="lesson.css">
 </head>
 <body>
-    <script src="./lesson.js"></script>   
+    <!-- HEADER -->
+    <header class="main-header">
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#">Посилання 1</a></li>
+                <li class="nav-item"><a href="#">Посилання 2</a></li>
+                <li class="nav-item"><a href="#">Посилання 3</a></li>
+            </ul>
+        </nav>
+        <h1 class="site-title">Назва твого сайту</h1>
+        <p class="site-description">Опис твого сайту</p>
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">Заголовок героя</h1>
+          <p class="hero-description">Опис героя</p>
+          <button class="hero-button">Кнопка героя</button>
+        </div>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Модальне вікно</h2>
+            <form>
+              <label for="name">Ім'я:</label>
+              <input type="text" id="name" name="name" required>
+      
+              <label for="surname">Прізвище:</label>
+              <input type="text" id="surname" name="surname" required>
+      
+              <label for="message">Повідомлення:</label>
+              <textarea id="message" name="message" required></textarea>
+      
+              <button type="submit">Відправити</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+    <script src="./lesson.js"></script>
 </body>
 </html>
