@@ -1,0 +1,1 @@
+const categoriesReff = document.querySelector('#categories');
