@@ -64,84 +64,12 @@ const galleryItems = [
   },
 ];
 
-// const galleryContainer = document.querySelector('.js-gallery');
-
-// const cardsMarkup = createImagesMarkup(galleryItems);
-
-// galleryContainer.insertAdjacentHTML("beforeend", cardsMarkup);
-
-// galleryContainer.addEventListener('click', onImagesContainerClick);
-
-
-// function createImagesMarkup(galleryItems) {
-
-//   return galleryItems.map(({description, preview, original}) => {
-//     return `
-//      <li class="gallery__item">
-//       <a class="gallery__link" 
-//         href="${description}">
-//         <img class="gallery__image" src="${preview}" 
-//         data-source="${original}" alt="Tulips"/>
-//        </a>
-//       </li>
-//       `;
-//     })
-
-//   .join('');
-
-// }
-
-// function onImagesContainerClick(evt) {
-//   event.preventDefault();
-// const isImageSwatchEl = evt.target.classList.contains('gallery__item');
-
-// if (!isImageSwatchEl) {
-//   return;
-// }
-
-//   const swatchEl = evt.target;
-//   const parentImagesCard = swatchEl.closest('.lightbox');
-
-//   parentImagesCard.classList.add('.is-open');
-
-// }
-
-
-
-
-// const imagesModals = document.querySelectorAll('.gallery__image');
-
-// images.forEach(image => {
-//   image.addEventListener('click', () => {
-//     event.preventDefault();
-//     const source = image.dataset.source;
-//     const overlay = document.createElement('div');
-//     overlay.classList.add('overlay');
-
-//     const img = document.createElement('img');
-//     img.src = source;
-//     img.classList.add('overlay__image');
-
-//     overlay.appendChild(img);
-//     document.body.appendChild(overlay);
-
-//     overlay.addEventListener('click', () => {
-//       overlay.remove();
-//     });
-//   });
-// });
-
-
-
-
-
-
 const galleryList = document.querySelector('.js-gallery');
 const lightbox = document.querySelector('.js-lightbox');
 const lightboxImage = document.querySelector('.lightbox__image');
 
 // Заповнення списку елементів галереї
-const createGalleryItem = ({ preview, original, description }) =>
+const createGalleryItem = ({ preview, original, description}) =>
   `<li class="gallery__item">
      <a
        class="gallery__link"
@@ -202,7 +130,7 @@ function onLightboxClick(event) {
 
 // Закриття модального вікна з повнорозмірним зображенням
 function closeModal() {
-  lightboxImage.src = '';
-  lightboxImage.alt = '';
+  lightboxImage.src = "";
+  lightboxImage.alt = "";
   lightbox.classList.remove('is-open');
 }
