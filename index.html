@@ -77,6 +77,62 @@
     <button class="hero-button" data-modal-open>Замовити послугу</button>
     </section>
 
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+        <button type="button" class="modal-cross__button" data-modal-close>
+            <svg width="11px" height="11px"><use href="./images/modal-cross.svg#modal-cross"></use></svg>
+        </button>
+            <form class="form js-speacer-form">
+            <ul class="form-field">
+                <h2 class="modal-text">Залиште свої дані, ми вам передзвонимо</h2>
+
+            <li class="form-field-modal">
+                <label for="name" class="form-label">Ім'я</label>
+            </li>
+            <li class="form-focus">
+                <input type="text" class="form-input" name="name" id="name" autofocus>
+                <svg class="size-icon"><use href="./images/modal.icons.svg#icon-name"></use></svg>
+            </li>
+
+            <li class="form-field-modal">
+                <label for="tel" class="form-label">Телефон</label>
+            </li>
+            <li class="form-focus">
+                <input type="tel" name="tel" id="tel">
+                <svg class="size-icon size-tel"><use href="./images/modal.icons.svg#icon-phon"></use></svg>
+            </li>
+
+            <li class="form-field-modal">
+                <label for="mail" class="form-label">Пошта</label>
+            </li>
+            <li class="form-focus">
+                <input type="email" name="mail" id="mail" autocomplete="off">
+                <svg class="size-icon size-mail"><use href="./images/modal.icons.svg#icon-mail"></use></svg>
+            </li>
+
+            <li class="form-field-modal">
+                <label for="" class="form-label">Коментар</label>
+            </li>
+            <li class="form-focus">
+                <textarea name="" id="textarea" cols="" rows="" placeholder="Введіть текст"></textarea>
+            </li>
+            </ul>
+            
+            <label class="modal-label" for="click">
+                <input class="modal-label__checkbox" type="checkbox" name="topic" value="js" id="click"/>
+                <span class="modal-label__icon"></span>
+                <p class="modal-label__text">Погоджуюся з розсилкою та приймаю</p>
+                <span class="modal-label__link"><a href="">Умови договору</a></span>
+            </label>
+
+            <div class="submit">
+                <button type="submit" class="submit-button">Відправити</button>
+            </div>
+        
+            </form>
+        </div>
+    </div>
+
     <section class="section">
         <div class="container">
         <h2 class="visually-hidden"> Наші переваги</h2>
@@ -279,116 +335,6 @@
         </nav>
     </footer>
     
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-        <button type="button" class="modal-cross__button">
-            <svg data-modal-close width="11px" height="11px"><use href="./images/modal-cross.svg#modal-cross"></use></svg>
-        </button>
-            <form class="form js-speacer-form">
-            <ul class="form-field">
-                <h2 class="modal-text">Залиште свої дані, ми вам передзвонимо</h2>
-
-            <li class="form-field-modal">
-                <label for="name" class="form-label">Ім'я</label>
-            </li>
-            <li class="form-focus">
-                <input type="text" class="form-input" name="name" id="name" autofocus>
-                <svg class="size-icon"><use href="./images/modal.icons.svg#icon-name"></use></svg>
-            </li>
-
-            <li class="form-field-modal">
-                <label for="tel" class="form-label">Телефон</label>
-            </li>
-            <li class="form-focus">
-                <input type="tel" name="tel" id="tel">
-                <svg class="size-icon size-tel"><use href="./images/modal.icons.svg#icon-phon"></use></svg>
-            </li>
-
-            <li class="form-field-modal">
-                <label for="mail" class="form-label">Пошта</label>
-            </li>
-            <li class="form-focus">
-                <input type="email" name="mail" id="mail" autocomplete="off">
-                <svg class="size-icon size-mail"><use href="./images/modal.icons.svg#icon-mail"></use></svg>
-            </li>
-
-            <li class="form-field-modal">
-                <label for="" class="form-label">Коментар</label>
-            </li>
-            <li class="form-focus">
-                <textarea name="" id="textarea" cols="" rows="" placeholder="Введіть текст"></textarea>
-            </li>
-            </ul>
-            
-            <label class="modal-label" for="click">
-                <input class="modal-label__checkbox" type="checkbox" name="topic" value="js" id="click"/>
-                <span class="modal-label__icon"></span>
-                <p class="modal-label__text">Погоджуюся з розсилкою та приймаю</p>
-                <span class="modal-label__link"><a href="">Умови договору</a></span>
-            </label>
-
-            <div class="submit">
-                <button type="submit" class="submit-button">Відправити</button>
-            </div>
-        
-            </form>
-        </div>
-    </div>
-
-    <!-- <div class="modal-wrapper" data-modal>
-        <div class="modal">
-          <button type="button" class="modal-close">
-            <svg class="modal-close__icon" width="11" height="11">
-              <use xlink:href="./images/modal-cross.svg#modal-cross"></use>
-            </svg>
-          </button>
-          <form class="form js-speaker-form">
-            <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
-            <ul class="form-fields">
-              <li class="form-field">
-                <label for="name" class="form-label">Ім'я</label>
-                <div class="form-input-wrapper">
-                  <input type="text" class="form-input" name="name" id="name" autofocus>
-                  <svg class="form-icon"><use xlink:href="./images/modal.icons.svg#icon-name"></use></svg>
-                </div>
-              </li>
-              <li class="form-field">
-                <label for="tel" class="form-label">Телефон</label>
-                <div class="form-input-wrapper">
-                  <input type="tel" name="tel" id="tel">
-                  <svg class="form-icon form-icon-tel"><use xlink:href="./images/modal.icons.svg#icon-phon"></use></svg>
-                </div>
-              </li>
-              <li class="form-field">
-                <label for="mail" class="form-label">Пошта</label>
-                <div class="form-input-wrapper">
-                  <input type="email" name="mail" id="mail" autocomplete="off">
-                  <svg class="form-icon form-icon-mail"><use xlink:href="./images/modal.icons.svg#icon-mail"></use></svg>
-                </div>
-              </li>
-              <li class="form-field">
-                <label for="comment" class="form-label">Коментар</label>
-                <div class="form-input-wrapper">
-                  <textarea name="comment" id="comment" cols="30" rows="5" placeholder="Введіть текст"></textarea>
-                </div>
-              </li>
-            </ul>
-            <div class="form-agreement">
-              <label class="form-agreement__label" for="agreement">
-                <input class="form-agreement__checkbox" type="checkbox" name="agreement" value="1" id="agreement">
-                <span class="form-agreement__checkmark"></span>
-                <span class="form-agreement__text">Погоджуюся з розсилкою та приймаю</span>
-                <a class="form-agreement__link" href="">Умови договору</a>
-              </label>
-            </div>
-            <div class="form-submit">
-              <button type="submit" class="form-submit__button">Відправити</button>
-            </div>
-          </form>
-        </div>
-      </div> -->
-      
-
 <script src="./js/modal.js"></script>
 <script src="./js/menu.js"></script>
 </body>
