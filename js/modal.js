@@ -12,27 +12,6 @@
     refs.modal.classList.toggle("is-hidden");
   }
 
-
-
-
-  // const openModalBtn = document.querySelector("[data-modal-open]");
-  // const closeModalBtn = document.querySelector("[data-modal-close]");
-  // const modal = document.querySelector("[data-modal]");
-
-  // openModalBtn.addEventListener("click", openModal);
-  // closeModalBtn.addEventListener("click", closeModal);
-
-  // function openModal() {
-  //   modal.classList.add("is-hidden");
-  // }
-
-  // function closeModal() {
-  //   modal.classList.remove("is-hidden");
-  // }
-
-
-
-
   // Отримуємо форму
   const form = document.querySelector('.js-speacer-form');
 
@@ -53,7 +32,7 @@
     console.log("Телефон: " + tel);
     console.log("Пошта: " + mail);
     console.log("Повідомлення: " + textarea);
-    //Отримуємо дані з форми і відправляємо на сервер за допомогою AJAX-запиту
+    // Отримуємо дані з форми і відправляємо на сервер за допомогою AJAX-запиту
     let xhr = new XMLHttpRequest();
     xhr.open('POST', 'url_for_sending_data.php', true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
