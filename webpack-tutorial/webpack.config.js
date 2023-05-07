@@ -14,5 +14,10 @@ module.exports = {
 
     plugins: [
         new CleanWebpackPlugin(), 
-        new HtmlWebpackPlugin({title: 'My App',})],
+        new HtmlWebpackPlugin({title: 'My App', 
+        template: path.resolve(__dirname, "./src/template.html"),
+        filename: "index.html",
+        inject: "body",
+    }),
+  ],
 };
