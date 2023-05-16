@@ -2,6 +2,7 @@ import example from "./images/bee-on-daisy.jpg";
 import imgSvg from "./images/google-icon.svg";
 import imgPng from "./images/png-transparent-butterfly-pink-free-butterflies-pics-purple-blue-image-file-formats.png";
 import { sum } from "./helper/sum.js";
+import "./styles/main.scss";
 
 console.log("Webpack");
 
