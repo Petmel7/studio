@@ -1,12 +1,12 @@
 export const base = {
     name: "User",
-    postion: "FE Developer",
-    lamguage: "Javascript",
+    position: "FE Developer",
+    language: "Javascript",
 };
 
 export const list = {
-    fremeworks: ["React", "Vue", "Angular"],
-    libs: ["moment", "lodash", "axios", "propType"],
+    frameworks: ["React", "Vue", "Angular"],
+    libs: ["moment", "lodash", "axios", "propTypes"],
 };
 
 export const frameworks = ["React", "Vue", "Angular"];
