@@ -1,3 +1,29 @@
+// import simpleTemplate from './templates/simple.hbs';
+// import listTemplate from "./templates/list.hbs"
+// import arrTemplate from "./templates/array.hbs"
+// import libsTemplate from "./templates/libs.hbs"
+// import { base, list, frameworks, libs } from "./data/hbsData.js"
+import "./styles/style.css";
+
+// const root = document.querySelector("#root");
+
+// const markup = simpleTemplate(base);
+// root.insertAdjacentHTML("beforeend", markup);
+
+// const listMarkup = listTemplate(list);
+// root.insertAdjacentHTML("beforeend", listMarkup);
+
+// const arrMarkup = arrTemplate(frameworks);
+// root.insertAdjacentHTML("beforeend", arrMarkup);
+
+// const libsMarkup = libsTemplate(libs);
+// root.insertAdjacentHTML("beforeend", libsMarkup);
+
+
+
+
+//Перше завдання
+
 // import example from "./images/bee-on-daisy.jpg";
 // import imgSvg from "./images/google-icon.svg";
 // import imgPng from "./images/png-transparent-butterfly-pink-free-butterflies-pics-purple-blue-image-file-formats.png";
@@ -34,16 +60,3 @@
 // app.append(pngImg);
 
 // console.log(sum(2, 3));
-
-
-
-import simpleTemplate from './templates/simple.hbs';
-import { base } from "./data/hbsData.js"
-import "./styles/style.css";
-
-const root = document.querySelector("#root");
-
-const markup = simpleTemplate(base);
-console.log(markup);
-
-root.insertAdjacentHTML("afterend", markup);
