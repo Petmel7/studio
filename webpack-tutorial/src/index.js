@@ -41,5 +41,9 @@ import simpleTemplate from './templates/simple.hbs';
 import { base } from "./data/hbsData.js"
 import "./styles/style.css";
 
+const root = document.querySelector("#root");
+
 const markup = simpleTemplate(base);
 console.log(markup);
+
+root.insertAdjacentHTML("afterend", markup);
