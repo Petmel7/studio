@@ -1,0 +1,1 @@
+export default ["Що таке handlebars", "Як запустити збірку webpack"];
