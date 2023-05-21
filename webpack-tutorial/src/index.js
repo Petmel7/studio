@@ -1,3 +1,22 @@
+import menuHbs from "./templates/menu.hbs";
+import menuJson from "./menu.json";
+
+const root = document.querySelector("#root");
+
+import "./styles/style.css";
+
+const markup = menuHbs();
+root.insertAdjacentHTML("beforeend", markup);
+
+const menuArrMarkup = menuJson();
+root.insertAdjacentHTML("beforeend", menuArrMarkup);
+
+
+
+
+
+
+
 //Друге завдання
 
 // import simpleTemplate from './templates/simple.hbs';
@@ -80,8 +99,3 @@
 // refs.root.insertAdjacentHTML("beforeend", markup);
 
 // refs.form.addEventListener("submit", submitHundler);
-
-
-
-
-

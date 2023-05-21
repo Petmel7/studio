@@ -54,4 +54,14 @@ module.exports = {
     hot: true,
     port: 8080,
   },
+  module: {
+    rules: [
+      // інші правила
+      {
+        test: /\.json$/,
+        use: 'json-loader',
+        type: 'javascript/auto',
+      },
+    ],
+  },
 };
