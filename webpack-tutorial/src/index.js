@@ -1,14 +1,21 @@
+//Друге завдання
+
 // import simpleTemplate from './templates/simple.hbs';
 // import listTemplate from "./templates/list.hbs"
 // import arrTemplate from "./templates/array.hbs"
 // import libsTemplate from "./templates/libs.hbs"
 // import { base, list, frameworks, libs } from "./data/hbsData.js"
-import refs from "./js/refs.js";
-import { submitHundler } from "./js/handlers.js";
-import questionsTemplate from "./templates/questions.hbs";
-import serverData from "./data/serverData.js";
 
-import "./styles/style.css";
+//Третє завдання
+
+// import refs from "./js/refs.js";
+// import { submitHundler } from "./js/handlers.js";
+// import questionsTemplate from "./templates/questions.hbs";
+// import serverData from "./data/serverData.js";
+
+// import "./styles/style.css";
+
+//Друге завдання
 
 // const root = document.querySelector("#root");
 
@@ -67,8 +74,14 @@ import "./styles/style.css";
 // console.log(sum(2, 3));
 
 
+//Третє завдання
 
-const markup = questionsTemplate(serverData);
-refs.root.insertAdjacentHTML("beforeend", markup);
+// const markup = questionsTemplate(serverData);
+// refs.root.insertAdjacentHTML("beforeend", markup);
 
-refs.form.addEventListener("submit", submitHundler);
+// refs.form.addEventListener("submit", submitHundler);
+
+
+
+
+
