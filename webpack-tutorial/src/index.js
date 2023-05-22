@@ -1,15 +1,15 @@
-import menuHbs from "./templates/menu.hbs";
-import menuJson from "./menu.json";
+// import menuHbs from "./templates/menu.hbs";
+// import menuJson from "./menu.json";
 
-const root = document.querySelector("#root");
+// const root = document.querySelector("#root");
 
-import "./styles/style.css";
+// import "./styles/style.css";
 
-const markup = menuHbs();
-root.insertAdjacentHTML("beforeend", markup);
+// const markup = menuHbs();
+// root.insertAdjacentHTML("beforeend", markup);
 
-const menuArrMarkup = menuJson();
-root.insertAdjacentHTML("beforeend", menuArrMarkup);
+// const menuArrMarkup = menuJson();
+// root.insertAdjacentHTML("beforeend", menuArrMarkup);
 
 
 
