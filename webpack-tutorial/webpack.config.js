@@ -30,19 +30,28 @@ module.exports = {
         exclude: "/node_modules/",
         use: ["babel-loader"],
       },
-     {
-      test: /\.(?:ico|gif|png|jpg|jpeg|webp|svg)$/i,
-      type: "asset/resource",
-     },
-     {
-      test: /\.(woff(2)?|eot|ttf|otf|svg)$/i,
-      type: "asset/inline",
+      {
+        test: /\.(?:ico|gif|png|jpg|jpeg|webp|svg)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.(woff(2)?|eot|ttf|otf|svg)$/i,
+        type: "asset/inline",
       },
       {
         test: /\.(scss|css)$/,
         use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"],
       },
-      { test: /\.hbs$/, exclude: /node_modules/, use: "handlebars-loader" }
+      {
+        test: /\.hbs$/,
+        exclude: /node_modules/,
+        use: "handlebars-loader"
+      },
+      {
+        test: /\.json$/,
+        use: 'json-loader',
+        type: 'javascript/auto',
+      },
     ],
   },
   mode: "development",
@@ -53,15 +62,5 @@ module.exports = {
     compress: true,
     hot: true,
     port: 8080,
-  },
-  module: {
-    rules: [
-      // інші правила
-      {
-        test: /\.json$/,
-        use: 'json-loader',
-        type: 'javascript/auto',
-      },
-    ],
   },
 };
