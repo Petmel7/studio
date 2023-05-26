@@ -1,1 +1,1 @@
-export default ["Що таке handlebars", "Як запустити збірку webpack"];
+// export default ["Що таке handlebars", "Як запустити збірку webpack"];
