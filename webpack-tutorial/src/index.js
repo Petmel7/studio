@@ -5,14 +5,27 @@
 
 // const jsmenu = document.querySelector(".js-menu");
 
-// // const createGalleryList = ({ ingredients }) =>
-// // `${ingredients.map((ingredient) => `<li class="tag-list__item">${ingredient}</li>`).join('')}`
-
 // const markup = menuHbs();
 // jsmenu.insertAdjacentHTML("beforeend", markup);
 
 // const menuArrMarkup = menuJson.map(item => menuHbs(item)).join('');
 // jsmenu.insertAdjacentHTML("beforeend", menuArrMarkup);
+
+
+
+
+
+// import menuHbs from "./templates/menu.hbs";
+// import menuJson from "./menu.json";
+// import "./styles/style.css";
+
+// const jsmenu = document.querySelector(".js-menu");
+
+// const markup = menuHbs();
+// jsmenu.insertAdjacentHTML("beforeend", markup); // Додає базову HTML-розмітку в Node
+
+// const menuItemMarkup = menuJson.map(item => menuHbs(item)).join('');
+// jsmenu.insertAdjacentHTML("beforeend", menuItemMarkup); // Додає кожен елемент меню з масиву JSON у Node
 
 
 
